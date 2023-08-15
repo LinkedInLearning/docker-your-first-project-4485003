@@ -1,0 +1,426 @@
+/*-----------------------------------------------------
+
+    Title :  Big Star Collectibles
+    Usage :  homepage
+    Edited:  2022-09-30
+
+-------------------------------------------------------
+
+    1. hero
+    2. collections
+    3. responsive ( 991px)
+
+-------------------------------------------------------*/
+
+
+
+/*  1. hero
+-------------------------------------------------------*/
+
+#hero {
+	position: relative;
+	margin-bottom: 61px;
+	height: 460px;
+	}
+
+#hero .splide__arrow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	opacity: 0;
+	width: 66px;
+	height: 100%;
+	}
+
+#hero:hover                 .splide__arrow,
+#hero       :focus-within > .splide__arrow {
+	opacity: 1;
+	}
+
+#hero .splide__arrow--next {
+	left: auto;
+	right: 0;
+	transform: scaleX(-1);
+	}
+
+#hero .splide__arrow > img {
+	display: block;
+	padding: 0 24px 0 23px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	}
+
+#hero .splide__arrow:is(:hover, :focus) > img {
+	background-color: rgba(0, 0, 0, 0.3);
+	}
+
+#hero .splide__track {
+	height: 100%;
+	}
+
+#hero .splide__slide {
+	padding: 0 var(--padding-inline-center-content);
+	height: 100%;
+	}
+
+#hero .splide__slide.opaque {
+	opacity: 1 !important;
+	}
+
+#hero .splide__slide > .wrapper {
+	position: absolute;
+	left: calc(var(--padding-inline-center-content) + (100% - 2 * var(--padding-inline-center-content)) * 0.034);
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 483px;
+	text-align: center;
+	}
+
+#hero .splide__slide h2 {
+	color: inherit;
+	font-style: italic;
+	font-size: 6.6rem;
+	line-height: 1.1489;
+	}
+
+#hero .wrapper > p {
+	font-weight: 400;
+	font-size: 2.6rem;
+	line-height: 1.1488;
+	}
+
+#hero .splide__slide .wrapper > .button {
+	min-width: 282px;
+	}
+
+#hero .splide__pagination {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	gap: 14px;
+	width: 100%;
+	}
+
+#hero .splide__pagination__page {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-color: rgba(102, 102, 102, 0.3);
+	border-radius: 50%;
+	}
+
+#hero :is(:hover, :focus, .is-active).splide__pagination__page {
+	background-color: var(--color-grape);
+	}
+
+
+/*  Big Star  */
+
+#hero .big-star {
+	background-color: var(--color-whitesmoke);
+	}
+
+#hero .big-star > .wrapper {
+	top: 77px;
+	left: calc(var(--padding-inline-center-content) + (100% - 2 * var(--padding-inline-center-content)) * 0.1195);
+	width: 298px;
+	}
+
+#hero .big-star .wrapper > img {
+	margin-bottom: 47px;
+	}
+
+#hero .big-star > img {
+	position: absolute;
+	top: 72px;
+	left: calc(var(--padding-inline-center-content) + (100% - 2 * var(--padding-inline-center-content)) * 0.549);
+	}
+
+
+/*  Sale  */
+
+#hero .sale {
+	color: #000;
+	background-color: var(--color-gold);
+	}
+
+#hero .sale > .wrapper {
+	top: 105px;
+	}
+
+#hero .sale .wrapper > p {
+	margin-top: 1.2rem;
+	}
+
+#hero .sale .wrapper > .button {
+	margin-top: 62px;
+	}
+
+#hero .sale > img {
+	position: absolute;
+	top: 47px;
+	left: calc(var(--padding-inline-center-content) + (100% - 2 * var(--padding-inline-center-content)) * 0.543);
+	}
+
+
+/*  Gifts */
+
+#hero .gifts {
+	color: #fff;
+	background-color: var(--color-violet);
+	}
+
+#hero .gifts > .wrapper {
+	top: 99px;
+	left: calc(var(--padding-inline-center-content) + (100% - 2 * var(--padding-inline-center-content)) * 0.009);
+	width: 541px;
+	}
+
+#hero .gifts h2 {
+	font-size: 5.6rem;
+	}
+
+#hero .gifts .wrapper > p {
+	margin-top: 1.4rem;
+	max-width: 340px;
+	}
+
+#hero .gifts .wrapper p > br {
+	display: none;
+	}
+
+#hero .gifts .wrapper > .button {
+	margin-top: 48px;
+	}
+
+#hero .gifts > img {
+	position: absolute;
+	top: -57px;
+	left: calc(var(--padding-inline-center-content) + (100% - 2 * var(--padding-inline-center-content)) * 0.521);
+	}
+
+
+
+/*  2. collections
+-------------------------------------------------------*/
+
+.collection {
+	position: relative;
+	padding: 40px var(--padding-inline-center-content) 31px;
+	}
+
+.collection + .collection {
+	padding-top: 61px;
+	}
+
+.collection + .collection::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: calc(-1 * min(1440px, 100%) / 2);
+	width: min(1440px, 100%);
+	border-top: 1px solid #ECECEC;
+	}
+
+.collection > header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	row-gap: 20px;
+	margin-bottom: 19px;
+	width: 100%;
+	}
+
+.collection.tech-heroes > header {
+	margin-bottom: 42px;
+	}
+
+.collection.binaryville > header > img {
+	margin-right: 70px;
+	}
+
+.collection.lil-monsters > header > img {
+	margin-right: 70px;
+	}
+
+.collection.stargazers > header > img {
+	margin: 0 101px 0 30px;
+	}
+
+.collection.tech-heroes > header > img {
+	margin-right: 70px;
+	}
+
+.collection h1 {
+	margin: 0 auto 1px 0;
+	padding-right: 20px;
+	font-size: 4.8rem;
+	line-height: 1.1458;
+	}
+
+.collection header > .button {
+	min-width: 242px;
+	}
+
+
+
+/*  3. responsive ( 991px)
+-------------------------------------------------------*/
+
+@media (max-width:  991px) {
+
+/*  1. hero  */
+
+#hero {
+	margin-bottom: 40px;
+	height: 640px;
+	}
+
+#hero .splide__arrow {
+	display: none;
+	}
+
+#hero .splide__slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+
+#hero .splide__slide.opaque {
+	opacity: 1 !important;
+	}
+
+#hero .splide__slide > .wrapper {
+	position: static;
+	width: auto;
+	}
+
+#hero .splide__slide h2 {
+	font-size: 5.8rem;
+	line-height: 1.17;
+	}
+
+#hero .wrapper > p {
+	font-size: 1.8rem;
+	line-height: 1.1667;
+	}
+
+#hero .splide__slide .wrapper > .button {
+	width: min(282px, 100%);
+	min-width: 0;
+	}
+
+/*  Big Star  */
+
+#hero .big-star {
+	padding-bottom: 32px;
+	}
+
+#hero .big-star > .wrapper {
+	margin-top: 46px;
+	margin-top: 0;
+	width: auto;
+	}
+
+#hero .big-star > img {
+	position: static;
+	margin-top: 30px;
+	width: min(335px, 100%);
+	height: auto;
+	}
+
+/*  Sale  */
+
+#hero .sale {
+	padding-bottom: 66px;
+	}
+
+#hero .sale > .wrapper {
+	margin-top: 31px;
+	}
+
+#hero .sale .wrapper > p {
+	margin-top: 1rem;
+	}
+
+#hero .sale .wrapper > .button {
+	margin-top: 40px;
+	}
+
+#hero .sale > img {
+	position: static;
+	margin-top: 30px;
+	width: min(335px, 100%);
+	height: auto;
+	}
+
+/*  Gifts  */
+
+#hero .gifts {
+	padding-bottom: 36px;
+	}
+
+#hero .gifts .wrapper > p {
+	margin-top: 1.1rem;
+	}
+
+#hero .gifts .wrapper p > br {
+	display: inline;
+	}
+
+#hero .gifts .wrapper > .button {
+	margin-top: 19px;
+	}
+
+#hero .gifts > img {
+	position: static;
+	margin: 5px -178px 0 0;
+	max-width: 436px;
+	height: auto;
+	}
+
+
+/*  2. collections  */
+
+.collection {
+	padding-bottom: 28px;
+	}
+
+.collection + .collection {
+	padding-top: 41px;
+	}
+
+.collection > header {
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 17px;
+	}
+
+.collection.tech-heroes > header {
+	margin-bottom: 19px;
+	}
+
+.collection > header > img {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	}
+
+.collection h1 {
+	margin-top: -1px;
+	margin-right: 0;
+	padding-right: 0;
+	font-size: 2.8rem;
+	}
+
+.collection header > .button {
+	margin-top: -2px;
+	}
+
+}

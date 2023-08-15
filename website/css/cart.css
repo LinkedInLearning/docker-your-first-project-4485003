@@ -1,0 +1,408 @@
+/*-----------------------------------------------------
+
+    Title :  Big Star Collectibles
+    Usage :  My Shopping Cart page
+    Edited:  2022-09-10
+
+-------------------------------------------------------
+
+    1. cart
+    2. responsive ( 991px)
+    3. responsive ( 767px)
+
+-------------------------------------------------------*/
+
+
+
+/*  1. cart
+-------------------------------------------------------*/
+
+#cart {
+	margin: 0 auto;
+	padding-top: 56px;
+	width: var(--width-center-section);
+	}
+
+#cart h1 {
+	margin-bottom: 60px;
+	padding-bottom: 3rem;
+	font-weight: 400;
+	font-size: 2.6rem;
+	border-bottom: 1px solid var(--color-border);
+	}
+
+#cart h1 > small {
+	margin-left: 0.2rem;
+	color: var(--color-gray);
+	font-size: 2rem;
+	}
+
+#cart > form {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	}
+
+#cart table:first-of-type { /* Items in cart */
+	width: min(680px, 100% - 420px);
+	}
+
+#cart table:first-of-type > caption {
+	position: absolute;
+	left: -5000px;
+	}
+
+#cart thead {
+	position: absolute;
+	left: -5000px;
+	}
+
+#cart table:first-of-type tbody > tr {
+	display: grid;
+	grid-template-columns: 160px 40px auto 40px 1fr;
+	grid-template-rows: auto auto auto 1fr;
+	grid-template-areas:
+		"Image . Name     . Total"
+		"Image . Details  . Total"
+		"Image . Quantity . Total"
+		"Image . Action   . Total";
+	margin-bottom: 40px;
+	}
+
+#cart tr .image {
+	grid-area: Image;
+	}
+
+#cart tr .image > a {
+	position: relative;
+	display: block;
+	padding-top: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: var(--color-whitesmoke);
+	border-radius: 4px;
+	}
+
+#cart tr .image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+
+#cart tr .name {
+	--color-link-static: var(--color-heading);
+	--color-link-hover: var(--color-heading);
+	--text-deco-line: none;
+	--color-link-background-hover: transparent;
+	grid-area: Name;
+	padding-top: 0.1rem;
+	font-weight: 400;
+	font-size: 2.6rem;
+	}
+
+#cart tr .dets {
+	grid-area: Details;
+	margin-top: -0.3rem;
+	font-size: 1.6rem;
+	}
+
+#cart tr .qty {
+	grid-area: Quantity;
+	display: flex;
+	align-items: center;
+	padding-top: 2.1rem;
+	font-size: 1.6rem;
+	}
+
+#cart tr .qty::before {
+	content: "Quantity:";
+	margin-right: 20px;
+	font-weight: 700;
+	font-size: 1.6rem;
+	}
+
+#cart tr .total {
+	grid-area: Total;
+	color: var(--color-dark);
+	font-weight: 400;
+	font-size: 2.6rem;
+	text-align: right;
+	}
+
+#cart tr .action {
+	grid-area: Action;
+	padding-top: 0.7rem;
+	font-size: 1.6rem;
+	}
+
+#cart table + table { /* Order summary */
+	width: 380px;
+	color: var(--color-heading);
+	border-collapse: separate;
+	border: solid var(--color-border);
+	border-width: 0 1px 1px;
+	border-radius: 0 0 4px 4px;
+	}
+
+#cart table + table caption {
+	padding: 20px 19px 0;
+	font-weight: 400;
+	font-size: 2.6rem;
+	text-align: left;
+	border: solid var(--color-border);
+	border-width: 1px 1px 0;
+	border-radius: 4px 4px 0 0;
+	}
+
+#cart table + table caption::after {
+	content: "";
+	display: block;
+	margin: 1.1rem 0 20px;
+	border-top: 1px solid var(--color-border);
+	}
+
+#cart table + table tbody th {
+	vertical-align: baseline;
+	padding: 10px 0 10px 19px;
+	font-weight: 300;
+	font-size: 2rem;
+	text-align: left;
+	}
+
+#cart table + table th > small {
+	display: block;
+	font-size: 1.4rem;
+	}
+
+#cart table + table tbody td {
+	vertical-align: baseline;
+	padding: 0 19px 0 9px;
+	font-weight: 400;
+	font-size: 2rem;
+	text-align: right;
+	}
+
+#cart table + table tfoot :first-child > th {
+	vertical-align: top;
+	padding: 18px 0 10px 19px;
+	font-weight: 300;
+	font-size: 2.6rem;
+	text-align: left;
+	}
+
+#cart table + table tfoot :first-child > td {
+	vertical-align: top;
+	padding: 18px 19px 18px 9px;
+	font-weight: 400;
+	font-size: 2.6rem;
+	text-align: right;
+	}
+
+#cart table + table tfoot :first-child > th::before,
+#cart table + table tfoot :first-child > td::before {
+	content: "";
+	display: block;
+	margin-bottom: 29px;
+	border-top: 1px solid var(--color-border);
+	}
+
+#cart table + table tfoot :first-child > th::before {
+	margin-right: -22px;
+	width: calc(100% + 22px);
+	}
+
+#cart table + table tfoot :last-child > td {
+	padding: 0 19px 35px;
+	}
+
+#cart table + table tfoot :last-child > td::before {
+	content: "";
+	display: block;
+	margin: 9px 0 30px;
+	border-top: 1px solid var(--color-border);
+	}
+
+#cart table + table tfoot td > .button {
+	width: 100%;
+	}
+
+#cart table + table tfoot td > p {
+	margin-top: 3rem;
+	font-size: 2rem;
+	text-align: center;
+	}
+
+
+
+/*  2. responsive ( 991px)
+-------------------------------------------------------*/
+
+@media (max-width:  991px) {
+
+/*  1. cart  */
+
+#cart {
+	padding-top: 41px;
+	padding-bottom: 61px;
+	width: auto;
+	}
+
+#cart h1 {
+	margin-bottom: 30px;
+	padding-right: var(--dist-min-cont-edge);
+	padding-bottom: 1.8rem;
+	padding-left: var(--dist-min-cont-edge);
+	}
+
+#cart > form {
+	display: block;
+	}
+
+#cart table:first-of-type { /* Items in cart */
+	width: 100%;
+	}
+
+#cart table:first-of-type tbody > tr {
+	padding-right: var(--dist-min-cont-edge);
+	padding-left: var(--dist-min-cont-edge);
+	}
+
+#cart table + table { /* Order summary */
+	margin: 20px auto 0;
+	width: var(--width-center-section);
+	}
+
+}
+
+
+
+/*  3. responsive ( 767px)
+-------------------------------------------------------*/
+
+@media (max-width:  767px) {
+
+/*  1. cart  */
+
+#cart table:first-of-type tbody > tr {
+	margin-bottom: 27px;
+	grid-template-columns: 80px 20px auto 20px 1fr;
+	}
+
+#cart table:first-of-type tbody > tr + tr {
+	padding-top: 30px;
+	border-top: 1px solid var(--color-border);
+	}
+
+#cart tr .name {
+	padding-top: 0;
+	font-size: 1.95rem;
+	}
+
+#cart tr .dets {
+	margin-top: 0.1rem;
+	font-size: 1.2rem;
+	}
+
+#cart tr .qty {
+	padding-top: 1.4rem;
+	}
+
+#cart tr .qty::before {
+	margin-right: 15px;
+	font-size: 1.2rem;
+	}
+
+#cart tr .qty .qty-widget > svg {
+	top: 0;
+	width: 24px;
+	height: 24px;
+	}
+
+#cart tr .qty .qty-widget > input {
+	width: 37px;
+	height: 21px;
+	font-size: 1.65rem;
+	}
+
+#cart tr .total {
+	font-size: 1.95rem;
+	}
+
+#cart tr .action {
+	padding-top: 0.9rem;
+	font-size: 1.2rem;
+	}
+
+#cart table + table { /* Order summary */
+	margin-top: 34px;
+	}
+
+#cart table + table caption {
+	padding-top: 18px;
+	padding-right: 17px;
+	padding-left: 17px;
+	}
+
+#cart table + table caption::after {
+	margin-top: 1.4rem;
+	margin-bottom: 18px;
+	}
+
+#cart table + table tbody th {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 17px;
+	font-size: 1.7rem;
+	}
+
+#cart table + table th > small {
+	margin-top: -1px;
+	font-size: 1.2rem;
+	}
+
+#cart table + table tbody td {
+	padding-right: 17px;
+	font-size: 1.7rem;
+	}
+
+#cart table + table tfoot :first-child > th {
+	padding-top: 19px;
+	padding-left: 17px;
+	font-size: 2.2rem;
+	}
+
+#cart table + table tfoot :first-child > td {
+	padding-top: 19px;
+	padding-right: 17px;
+	font-size: 2.2rem;
+	}
+
+#cart table + table tfoot :first-child > th::before,
+#cart table + table tfoot :first-child > td::before {
+	margin-bottom: 24px;
+	}
+
+#cart table + table tfoot :last-child > td {
+	padding-right: 17px;
+	padding-bottom: 36px;
+	padding-left: 17px;
+	}
+
+#cart table + table tfoot :last-child > td::before {
+	margin-top: 7px;
+	margin-bottom: 27px;
+	}
+
+#cart table + table tfoot td > .button {
+	font-size: 1.939rem;
+	height: 53px;
+	}
+
+#cart table + table tfoot td > p {
+	margin-top: 2.7rem;
+	font-size: 1.763rem;
+	}
+
+}

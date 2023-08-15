@@ -1,0 +1,426 @@
+/*-----------------------------------------------------
+
+    Title :  Big Star Collectibles
+    Usage :  about pages
+    Edited:  2022-09-22
+
+-------------------------------------------------------
+
+    1. wrapper
+    2. about pages content
+       2.1. Contact us
+    3. category navigation
+    4. responsive ( 991px)
+
+-------------------------------------------------------*/
+
+
+
+/*  1. wrapper
+-------------------------------------------------------*/
+
+#wrapper-about {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 auto;
+	padding: 100px 0 50px;
+	width: var(--width-center-section);
+	}
+
+
+
+/*  2. about pages content
+-------------------------------------------------------*/
+
+#wrapper-about > section {
+	width: calc(100% - 300px);
+	}
+
+#wrapper-about > section:not(#contact) {
+	font-size: 2rem;
+	}
+
+#wrapper-about section:not(#contact) > img {
+	display: block;
+	margin: 0 auto 46px;
+	text-align: center;
+	}
+
+#wrapper-about > section h1 {
+	font-weight: 400;
+	font-size: 4rem;
+	}
+
+#wrapper-about > section:not(#contact) h1 ~ h1 {
+	margin-top: 5.5rem;
+	}
+
+#wrapper-about > section:not(#contact) h1 ~ h1 + p {
+	margin-top: 0.6rem;
+	}
+
+#wrapper-about > section:not(#contact) > section:first-of-type,
+#wrapper-about > section:not(#contact) > h2:first-of-type {
+	margin-top: -0.6rem;
+	}
+
+#wrapper-about > section:not(#contact) h2 {
+	margin-top: 5.2rem;
+	font-weight: 300;
+	font-size: 3.2rem;
+	}
+
+#wrapper-about > section:not(#contact) p {
+	margin-top: 0.9rem;
+	}
+
+#wrapper-about > section:not(#contact) ul,
+#wrapper-about > section:not(#contact) ol {
+	counter-reset: item-number;
+	margin-top: 0.9rem;
+	padding-left: 3rem;
+	}
+
+#wrapper-about > section:not(#contact) li {
+	position: relative;
+	}
+
+#wrapper-about > section:not(#contact) ul > li::before {
+	content: "";
+	position: absolute;
+	top: 1rem;
+	left: -1.8rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: var(--color-body);
+	border-radius: 50%;
+	clip-path: circle(50%);
+	}
+
+#wrapper-about > section:not(#contact) ol > li::before {
+	content: counter(item-number) ".";
+	counter-increment: item-number;
+	position: absolute;
+	top: 0.09rem;
+	right: calc(100% + 0.7rem);
+	color: var(--color-dark);
+	font-weight: 700;
+	font-family: Roboto, sans-serif;
+	text-align: right;
+	}
+
+
+
+/*  2.1. Contact us
+-------------------------------------------------------*/
+
+#contact {
+	display: grid;
+	grid-template-columns: 1fr 260px;
+	grid-template-rows: auto 1fr;
+	grid-template-areas:
+		"left-col hq"
+		"left-col retail";
+	column-gap: 40px;
+	}
+
+#contact > .wrapper {
+	grid-area: left-col;
+	}
+
+#contact .wrapper > p {
+	margin-top: 1.9rem;
+	font-size: 2rem;
+	}
+
+#contact form {
+	margin-top: 4rem;
+	}
+
+#contact form > div + div,
+#contact form > :is(div, fieldset) + fieldset {
+	margin-top: 3rem;
+	}
+
+#contact fieldset > div + div {
+	margin-top: 1.1rem;
+	}
+
+#contact label[for="upload"] {
+	display: inline-block;
+	margin-top: 56px;
+	}
+
+#contact .drop-zone {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.4rem;
+	padding: 24px 20px 20px;
+	min-height: 140px;
+	background-color: var(--color-whitesmoke);
+	border: 1px dashed var(--color-border);
+	border-radius: 6px;
+	}
+
+#contact .dragged-over {
+	background-color: #EBDAED;
+	border-color: var(--color-purpleviolet);
+	}
+
+#contact .drop-zone > p {
+	font-weight: 500;
+	font-size: 2rem;
+	}
+
+#contact .drop-zone > .wrapper {
+	position: relative;
+	margin-top: 1.5rem;
+	}
+
+#upload {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	}
+
+#label-upload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px 2px;
+	min-width: 146px;
+	min-height: 44px;
+	font-weight: 400;
+	font-size: 2rem;
+	text-align: center;
+	background-color: #EFEFEF;
+	border: 1px solid #767676;
+	border-radius: 4px;
+	transition-property: color, background-color;
+	}
+
+.wrapper:hover > #label-upload {
+	color: var(--color-dark);
+	border-color: var(--color-dark);
+	}
+
+.wrapper:not(:hover) :focus:not(.no-outline) + #label-upload {
+	box-shadow: 0 0 0 2px var(--color-dark);
+	}
+
+#contact form .button {
+	margin-top: 3.4rem;
+	width: 100%;
+	}
+
+#hq {
+	grid-area: hq;
+	}
+
+#hq h2 {
+	position: absolute;
+	left: -5000px;
+	}
+
+#hq [itemprop="name"],
+#hq + section h2 {
+	display: inline-block;
+	margin-bottom: 1.1rem;
+	color: var(--color-heading);
+	font-weight: 500;
+	font-size: 2.4rem;
+	}
+
+#contact [itemprop="address"] {
+	display: block;
+	font-size: 2rem;
+	}
+
+:is(#hq, #hq + section) a[href^="tel"] {
+	--color-link-static: var(--color-body);
+	font-size: 2rem;
+	}
+
+#hq figure {
+	--color-link-background-hover: transparent;
+	margin-top: 2.9rem;
+	padding: 1.2rem 0;
+	border: solid var(--color-border);
+	border-width: 1px 0;
+	}
+
+#hq figcaption {
+	color: var(--color-heading);
+	font-weight: 500;
+	font-size: 2rem;
+	}
+
+#hq figure > ul {
+	display: flex;
+	column-gap: 30px;
+	margin-top: 1.2rem;
+	}
+
+#hq figure li > a { /* social links */
+	display: block;
+	fill: #666;
+	}
+
+#hq figure a:is(:hover, :focus) > svg {
+	fill: #191919;
+	}
+
+#hq + section {
+	grid-area: retail;
+	margin-top: 3.1rem;
+	}
+
+#hq + section dt {
+	color: var(--color-heading);
+	font-weight: 400;
+	font-size: 2rem;
+	}
+
+#hq + section dl > div + div {
+	margin-top: 2.5rem;
+	}
+
+
+
+/*  3. category navigation
+-------------------------------------------------------*/
+
+nav[aria-label="Category"] {
+	--color-link-static: var(--color-dark);
+	--color-link-hover: var(--color-purpleviolet);
+	--text-deco-line: none;
+	--color-link-background-hover: transparent;
+	position: sticky;
+	top: 50px;
+	flex-shrink: 0;
+	width: 260px;
+	border-bottom: 1px solid #ccc;
+	}
+
+[aria-label="Category"] li {
+	border-top: 1px solid #ccc;
+	}
+
+[aria-label="Category"] a {
+	display: block;
+	padding: 1.5rem 30px 1.6rem 0;
+	cursor: pointer;
+	font-size: 1.6rem;
+	}
+
+[aria-label="Category"] a[aria-current] {
+	font-weight: 500;
+	}
+
+
+
+/*  4. responsive ( 991px)
+-------------------------------------------------------*/
+
+@media (max-width:  991px) {
+
+/*  1. wrapper  */
+
+#wrapper-about {
+	display: block;
+	}
+
+
+/*  2. about pages content  */
+
+#wrapper-about > section {
+	width: auto;
+	}
+
+#wrapper-about > section:not(#contact) {
+	font-size: 1.6rem;
+	}
+
+#wrapper-about section:not(#contact) > img {
+	margin-bottom: 45px;
+	}
+
+#wrapper-about > section h1 {
+	padding-bottom: 0.1rem;
+	font-size: 3.6rem;
+	}
+
+#wrapper-about > section:not(#contact) h1 ~ h1 {
+	margin-top: 4.9rem;
+	}
+
+#wrapper-about > section:not(#contact) h2 {
+	margin-top: 4.7rem;
+	font-size: 2.8rem;
+	}
+
+#wrapper-about > section:not(#contact) ul,
+#wrapper-about > section:not(#contact) ol {
+	padding-left: 2.4rem;
+	}
+
+#wrapper-about > section:not(#contact) ul > li::before {
+	top: 0.9rem;
+	left: -1.4rem;
+	width: 0.4rem;
+	height: 0.4rem;
+	}
+
+#wrapper-about > section:not(#contact) ol > li::before {
+	right: calc(100% + 0.55rem);
+	}
+
+
+/*  2.1. Contact us  */
+
+#contact {
+	display: block;
+	margin-top: -59px;
+	}
+
+#contact .wrapper > h1 {
+	font-size: 4rem;
+	}
+
+#contact .wrapper > p {
+	margin-top: 1.8rem;
+	}
+
+#contact label[for="upload"] {
+	margin-top: 64px;
+	}
+
+#contact .drop-zone {
+	padding-top: 16px;
+	}
+
+#contact form .button {
+	margin-top: 2.5rem;
+	}
+
+#hq {
+	grid-area: hq;
+	margin-top: 10.1rem;
+	}
+
+
+/*  3. category navigation  */
+
+nav[aria-label="Category"] {
+	display: none;
+	}
+
+}

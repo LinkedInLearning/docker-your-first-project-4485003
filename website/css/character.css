@@ -1,0 +1,261 @@
+/*-----------------------------------------------------
+
+    Title :  Big Star Collectibles
+    Usage :  character detail page
+    Edited:  2022-09-09
+
+-------------------------------------------------------
+
+    1. character
+    2. responsive (1024px)
+    3. responsive ( 991px)
+
+-------------------------------------------------------*/
+
+
+
+/*  1. character
+-------------------------------------------------------*/
+
+#character {
+	position: relative;
+	padding: 60px var(--padding-inline-center-content) 70px;
+	min-height: 560px;
+	background-color: var(--color-whitesmoke);
+	}
+
+#character > .wrapper {
+	position: absolute;
+	bottom: 0;
+	right: var(--padding-inline-center-content);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 55px 0 55px 20px;
+	width: calc((100% - 2 * var(--padding-inline-center-content)) * 0.33898);
+	height: 100%;
+	}
+
+#character .wrapper > img {
+	max-height: 100%;
+	}
+
+#character .wrapper > img[alt*="Blade"] {
+	margin-bottom: 3%;
+	padding-left: 3.29%;
+	}
+
+#character blockquote {
+	position: absolute;
+	bottom: 147px;
+	right: 100%;
+	padding: 30px 30px 24px;
+	width: 250px;
+	min-height: 120px;
+	color: var(--color-dark);
+	font-size: 2.6rem;
+	font-family: "Vesper Libre", serif;
+	background-color: #fff;
+	border-radius: 20px;
+	}
+
+#character blockquote::before {
+	content: "";
+	position: absolute;
+	bottom: calc(100% - 1px);
+	right: 0;
+	width: 56px;
+	height: 31px;
+	background: 0 0 / 100% 100% no-repeat url(../images/quote-tail-top-right.svg);
+	}
+
+#character > header {
+	position: relative;
+	margin-right: 33.898%;
+	min-height: 102px;
+	}
+
+#character header > img {
+	position: absolute;
+	right: 0;
+	}
+
+#character header > img[alt*="Binaryville"] {
+	top: -8px;
+	}
+
+#character header > img[alt*="Monsters"] {
+	top: 25px;
+	}
+
+#character hgroup {
+	margin-right: 220px;
+	}
+
+#character h1 {
+	font-weight: 400;
+	font-size: 6rem;
+	}
+
+#character hgroup > p {
+	margin-top: 0.2rem;
+	font-size: 2rem;
+	}
+
+#character > p {
+	margin: 1.1rem 33.898% 0 0;
+	font-size: 1.6rem;
+	}
+
+#character dl {
+	display: table;
+	margin-top: 3.1rem;
+	font-size: 1.4rem;
+	}
+
+#character dl > div {
+	position: relative;
+	display: table-row;
+	}
+
+#character dl > div + div dt,
+#character dl > div + div dd {
+	padding-top: 0.85rem;
+	}
+
+#character dt {
+	display: table-cell;
+	padding-right: 20px;
+	min-width: calc(18rem + 20px);
+	font-weight: 400;
+	color: var(--color-heading);
+	}
+
+#character dt::after {
+	content: ":";
+	}
+
+#character dd {
+	display: table-cell;
+	}
+
+
+
+/*  2. responsive (1024px)
+-------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+
+/*  1. character  */
+
+#character {
+	padding-top: 0;
+	}
+
+#character > .wrapper {
+	position: relative;
+	right: auto;
+	margin-left: max(140px, 41.791%);
+	padding-top: 60px;
+	padding-bottom: 100px;
+	padding-left: 0;
+	width: auto;
+	height: 550px;
+	}
+
+#character blockquote {
+	bottom: 200px;
+	}
+
+#character > header {
+	margin-right: 0;
+	}
+
+#character hgroup {
+	margin-right: 0;
+	}
+
+#character > p {
+	margin-right: 0;
+	}
+
+}
+
+
+
+/*  3. responsive ( 991px)
+-------------------------------------------------------*/
+
+@media (max-width:  991px) {
+
+/*  1. character  */
+
+#character {
+	padding-top: 0;
+	padding-bottom: 38px;
+	}
+
+#character > .wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-left: 166px;
+	max-width: 335px;
+	height: 240px;
+	}
+
+#character .wrapper > img {
+	padding-left: 0 !important;
+	}
+
+#character blockquote {
+	bottom: 68px;
+	right: auto;
+	left: 0;
+	padding: 17px 17px 13px;
+	width: 140px;
+	min-height: 67px;
+	font-size: 1.5rem;
+	line-height: 1.275;
+	border-radius: 12px;
+	}
+
+#character blockquote::before {
+	width: 32px;
+	height: 18px;
+	}
+
+#character > header {
+	min-height: 0;
+	}
+
+#character header > img {
+	display: none;
+	}
+
+#character hgroup {
+	margin-right: 0;
+	}
+
+#character h1 {
+	font-size: 4.2rem;
+	}
+
+#character hgroup > p {
+	margin-top: 0.4rem;
+	font-size: 1.6rem;
+	}
+
+#character > p {
+	margin-top: 1.2rem;
+	font-size: 1.4rem;
+	line-height: 1.3;
+	}
+
+#character dt {
+	padding-right: 17px;
+	min-width: 0;
+	}
+
+}
