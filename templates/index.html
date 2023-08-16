@@ -7,31 +7,31 @@
 	<title>Big Star Collectibles</title>
 
 	<!-- favicons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="images/favicons/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='images/favicons/apple-icon-57x57.png') }}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='images/favicons/apple-icon-60x60.png') }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='images/favicons/apple-icon-72x72.png') }}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='images/favicons/apple-icon-76x76.png') }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='images/favicons/apple-icon-114x114.png') }}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/favicons/apple-icon-120x120.png') }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='images/favicons/apple-icon-144x144.png') }}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='images/favicons/apple-icon-152x152.png') }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-icon-180x180.png') }}">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='images/favicons/android-icon-192x192.png') }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/favicons/favicon-96x96.png') }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}">
+	<link rel="manifest" href="{{ url_for('static', filename='images/favicons/manifest.json') }}">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="{{ url_for('static', filename='images/favicons/ms-icon-144x144.png') }}">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- stylesheets -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Roboto:wght@700&display=swap">
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/common.css?ver=2209301853">
-	<link rel="stylesheet" href="css/home.css?ver=2209301557">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 </head>
 <body>
 
@@ -40,7 +40,7 @@
 	</div>
 
 	<header id="banner">
-		<a href="./"><img src="images/logomark-big-star-white.svg" width="43" height="50" alt="Big Star Collectibles"></a>
+		<a href="./"><img src="{{ url_for('static', filename='images/logomark-big-star-white.svg') }}" width="43" height="50" alt="Big Star Collectibles"></a>
 		<nav aria-label="Site">
 			<ul>
 				<li><a href="./" aria-current="page">Home</a></li>
@@ -144,21 +144,21 @@
 				</li>
 				<li><a href="Contact-Us.html">Contact</a></li>
 			</ul>
-			<button type="button"><img src="images/icon-menu.svg" width="30" height="24" alt="Site Navigation Panel"></button>
+			<button type="button"><img src="{{ url_for('static', filename='images/icon-menu.svg') }}" width="30" height="24" alt="Site Navigation Panel"></button>
 		</nav>
 		<div id="search-widget">
-			<button type="button" aria-expanded="false" aria-controls="search-popup"><img src="images/icon-search-white.svg" width="36" height="36" alt="Search Form"></button>
+			<button type="button" aria-expanded="false" aria-controls="search-popup"><img src="{{ url_for('static', filename='images/icon-search-white.svg') }}" width="36" height="36" alt="Search Form"></button>
 			<div id="search-popup" aria-hidden="true">
 				<form method="post" role="search">
 					<input type="search" aria-label="Enter product name" placeholder="Search&hellip;" tabindex="-1" required>
 					<button type="submit" tabindex="-1">Search</button>
 				</form>
-				<button type="button" tabindex="-1"><img src="images/icon-xmark.svg" width="26" height="26" alt="Close"></button>
+				<button type="button" tabindex="-1"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="26" height="26" alt="Close"></button>
 			</div>
 		</div><!-- / #search-widget -->
-		<a href="#"><img src="images/icon-user-v01-white.svg" width="36" height="36" alt="Account"></a>
+		<a href="#"><img src="{{ url_for('static', filename='images/icon-user-v01-white.svg') }}" width="36" height="36" alt="Account"></a>
 		<button type="button">
-			<img src="images/icon-shopping-cart-v01-white.svg" width="36" height="33" alt="Cart Panel">
+			<img src="{{ url_for('static', filename='images/icon-shopping-cart-v01-white.svg') }}" width="36" height="33" alt="Cart Panel">
 			<span class="visually-hidden">(</span><span class="num">6</span> <span class="visually-hidden">items)</span>
 		</button>
 	</header>
@@ -167,17 +167,17 @@
 
 		<section id="hero" class="splide" aria-label="Hero section">
 			<div class="splide__arrows">
-				<button class="splide__arrow splide__arrow--prev"><img src="images/icon-chevron-left-white.svg" alt="Previous"></button>
-				<button class="splide__arrow splide__arrow--next"><img src="images/icon-chevron-left-white.svg" alt="Next"></button>
+				<button class="splide__arrow splide__arrow--prev"><img src="{{ url_for('static', filename='images/icon-chevron-left-white.svg') }}" alt="Previous"></button>
+				<button class="splide__arrow splide__arrow--next"><img src="{{ url_for('static', filename='images/icon-chevron-left-white.svg') }}" alt="Next"></button>
 			</div>
 			<div class="splide__track">
 				<ul class="splide__list">
 					<li class="splide__slide big-star">
 						<div class="wrapper">
-							<img src="images/logo-big-star-H-purple.svg" width="298" height="161" alt="Logo of Big Star Collectibles">
+							<img src="{{ url_for('static', filename='images/logo-big-star-H-purple.svg') }}" width="298" height="161" alt="Logo of Big Star Collectibles">
 							<a href="Product-List.html" class="button lg solid gold">Shop now</a>
 						</div>
-						<img src="images/hero-big-star.jpg" srcset="images/hero-big-star.jpg 1x, images/hero-big-star@2x.jpg 2x, images/hero-big-star@3x.jpg 3x" width="485" height="317" alt="">
+						<img src="{{ url_for('static', filename='images/hero-big-star.jpg') }}" srcset="{{ url_for('static', filename='images/hero-big-star.jpg') }}, {{ url_for('static', filename='images/hero-big-star@2x.jpg') }}, {{ url_for('static', filename='images/hero-big-star@3x.jpg') }}" width="485" height="317" alt="">
 					</li>
 					<li class="splide__slide sale">
 						<div class="wrapper">
@@ -185,7 +185,7 @@
 							<p>Enjoy up to 20% off select items.</p>
 							<a href="Product-List.html" class="button lg solid white">See items on sale</a>
 						</div>
-						<img src="images/hero-sale.jpg" srcset="images/hero-sale.jpg 1x, images/hero-sale@2x.jpg 2x, images/hero-sale@3x.jpg 3x" width="502" height="367" alt="">
+						<img src="{{ url_for('static', filename='images/hero-sale.jpg') }}" srcset="{{ url_for('static', filename='images/hero-sale.jpg') }}, {{ url_for('static', filename='images/hero-sale@2x.jpg') }}, {{ url_for('static', filename='images/hero-sale@3x.jpg') }}" width="502" height="367" alt="">
 					</li>
 					<li class="splide__slide gifts">
 						<div class="wrapper">
@@ -193,7 +193,7 @@
 							<p>Shop our collections<br> to find that perfect collectible.</p>
 							<a href="Product-List.html" class="button lg solid gold">Shop now</a>
 						</div>
-						<img src="images/hero-gifts.jpg" srcset="images/hero-gifts.jpg 1x, images/hero-gifts@2x.jpg 2x, images/hero-gifts@3x.jpg 3x" width="750" height="465" alt="">
+						<img src="{{ url_for('static', filename='images/hero-gifts.jpg') }}" srcset="{{ url_for('static', filename='images/hero-gifts.jpg') }}, {{ url_for('static', filename='images/hero-gifts@2x.jpg') }}, {{ url_for('static', filename='images/hero-gifts@3x.jpg') }}" width="750" height="465" alt="">
 					</li>
 				</ul>
 			</div>
@@ -201,7 +201,7 @@
 
 		<section class="collection binaryville">
 			<header>
-				<img src="images/logo-Binaryville.svg" width="180" height="94" alt="Logo of Binaryville">
+				<img src="{{ url_for('static', filename='images/logo-Binaryville.svg') }}" width="180" height="94" alt="Logo of Binaryville">
 				<h1>Explore <span id="name-binaryville">Binaryville</span></h1>
 				<a href="Characters-by-Collection.html" class="button bordered grape" id="more-binaryville" aria-labelledby="more-binaryville name-binaryville">See all characters <span class="arrow" aria-hidden="true">&rarr;</span></a>
 			</header>
@@ -209,28 +209,28 @@
 				<div data-full-img="images/characters/Binaryville-Delores.svg">
 					<dt id="name-delores">Delores</dt>
 					<dd class="title">Forensic Accountant</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Binaryville-Delores.png" srcset="images/characters/avatar-Binaryville-Delores.png 1x, images/characters/avatar-Binaryville-Delores.svg 2x" width="200" height="200" alt="Avatar of Delores"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Binaryville-Delores.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Binaryville-Delores.png') }}, {{ url_for('static', filename='images/characters/avatar-Binaryville-Delores.svg') }}" width="200" height="200" alt="Avatar of Delores"></dd>
 					<dd class="desc">Dolores robot is a computational genius who performs calculations for various Binaryville businesses and organizations. In her spare time, Dolores has been noodling on the creation of the perfect web browser that will make all other browsers obsolete. We're rooting for you, Dolores!</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-delores" aria-labelledby="more-delores name-delores">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Binaryville-Rex.svg">
 					<dt id="name-rex">Rex</dt>
 					<dd class="title">Mayor of Binaryville</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Binaryville-Rex.png" srcset="images/characters/avatar-Binaryville-Rex.png 1x, images/characters/avatar-Binaryville-Rex.svg 2x" width="200" height="200" alt="Avatar of Rex"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Binaryville-Rex.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Binaryville-Rex.png') }}, {{ url_for('static', filename='images/characters/avatar-Binaryville-Rex.svg') }}" width="200" height="200" alt="Avatar of Rex"></dd>
 					<dd class="desc">Rex is the Mayor of Binaryville and a well-loved personality in town. He rose to robotdom from a microprocessor plant on the south side of town, where many famous and influential robots before him were conceived.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-rex" aria-labelledby="more-rex name-rex">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Binaryville-Fred.svg">
 					<dt id="name-fred">Fred</dt>
 					<dd class="title">Prototypical Engineer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Binaryville-Fred.png" srcset="images/characters/avatar-Binaryville-Fred.png 1x, images/characters/avatar-Binaryville-Fred.svg 2x" width="200" height="200" alt="Avatar of Fred"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Binaryville-Fred.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Binaryville-Fred.png') }}, {{ url_for('static', filename='images/characters/avatar-Binaryville-Fred.svg') }}" width="200" height="200" alt="Avatar of Fred"></dd>
 					<dd class="desc">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-fred" aria-labelledby="more-fred name-fred">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Binaryville-Bubbles.svg">
 					<dt id="name-bubbles">Bubbles</dt>
 					<dd class="title">Newscaster</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Binaryville-Bubbles.png" srcset="images/characters/avatar-Binaryville-Bubbles.png 1x, images/characters/avatar-Binaryville-Bubbles.svg 2x" width="200" height="200" alt="Avatar of Bubbles"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Binaryville-Bubbles.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Binaryville-Bubbles.png') }}, {{ url_for('static', filename='images/characters/avatar-Binaryville-Bubbles.svg') }}" width="200" height="200" alt="Avatar of Bubbles"></dd>
 					<dd class="desc">Bubble Gum robot, or “Bubbles” for short, is from a family of track-footed robots that ­originated from an experiment melding candy vending machines with robotics in the early 1980s. Bubbles is a favorite of Binaryville, not just because she generously dispenses candy, but also because she has one of the more "bubbly" personalities of the villagers.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-bubbles" aria-labelledby="more-bubbles name-bubbles">See bio and products</a></dd>
 				</div>
@@ -239,7 +239,7 @@
 
 		<section class="collection lil-monsters">
 			<header>
-				<img src="images/logo-Lil-Monsters.svg" width="180" height="36" alt="Logo of Lil’ Monsters">
+				<img src="{{ url_for('static', filename='images/logo-Lil-Monsters.svg') }}" width="180" height="36" alt="Logo of Lil’ Monsters">
 				<h1>Explore <span id="name-lil-monsters">Lil’ Monsters</span></h1>
 				<a href="Characters-by-Collection.html" class="button bordered grape" id="more-lil-monsters" aria-labelledby="more-lil-monsters name-lil-monsters">See all characters <span class="arrow" aria-hidden="true">&rarr;</span></a>
 			</header>
@@ -247,28 +247,28 @@
 				<div data-full-img="images/characters/Lil-Monsters-Blade.png">
 					<dt id="name-blade">Blade</dt>
 					<dd class="title">Mobile App Developer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Lil-Monsters-Blade.png" srcset="images/characters/avatar-Lil-Monsters-Blade.png 1x, images/characters/avatar-Lil-Monsters-Blade@2x.png 2x, images/characters/avatar-Lil-Monsters-Blade@3x.png 3x" width="200" height="200" alt="Avatar of Blade"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Blade.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Blade.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Blade@2x.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Blade@3x.png') }}" width="200" height="200" alt="Avatar of Blade"></dd>
 					<dd class="desc">Blade freelances as a mobile app developer and has built some of the most popular Android and iOS apps used in modern monster society, including the award-winning Monster APPetite, which tracks calorie consumption and activity for the health-conscious monster. In his spare time, he competes in national agility contests with his border collie Winston.</dd>
 					<dd><a href="Character-Detail-Blade.html" id="more-blade" aria-labelledby="more-blade name-blade">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Lil-Monsters-Mingle.png">
 					<dt id="name-mingle">Mingle</dt>
 					<dd class="title">Senior Data Analyst</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Lil-Monsters-Mingle.png" srcset="images/characters/avatar-Lil-Monsters-Mingle.png 1x, images/characters/avatar-Lil-Monsters-Mingle@2x.png 2x, images/characters/avatar-Lil-Monsters-Mingle@3x.png 3x" width="200" height="200" alt="Avatar of Mingle"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Mingle.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Mingle.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Mingle@2x.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Mingle@3x.png') }}" width="200" height="200" alt="Avatar of Mingle"></dd>
 					<dd class="desc">Mingle excels at doing twice the work in half the time, with pinpoint accuracy.  These skills serve her well in her role as Senior Data Analyst for an international cloud computing company. She's also got a penchant for ballroom dance, line dancing, and pretty much any kind of activity that lets her groove to music.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-mingle" aria-labelledby="more-mingle name-mingle">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Lil-Monsters-Melville.png">
 					<dt id="name-melville">Melville</dt>
 					<dd class="title">Senior Network Engineer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Lil-Monsters-Melville.png" srcset="images/characters/avatar-Lil-Monsters-Melville.png 1x, images/characters/avatar-Lil-Monsters-Melville@2x.png 2x, images/characters/avatar-Lil-Monsters-Melville@3x.png 3x" width="200" height="200" alt="Avatar of Melville"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Melville.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Melville.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Melville@2x.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Melville@3x.png') }}" width="200" height="200" alt="Avatar of Melville"></dd>
 					<dd class="desc">Setting up computer networks has always come easily to Melville. In his role as Senior Network Engineer for Landon Hotel, Melville builds complex blueprints for communication networks, a task that requires enormous attention to detail and patience. When not at work, Melville chooses less taxing mental activities, like hiking in the hills near his Silicon Valley home.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-melville" aria-labelledby="more-melville name-melville">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Lil-Monsters-Yodel.png">
 					<dt id="name-yodel">Yodel</dt>
 					<dd class="title">Singer, Performer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Lil-Monsters-Yodel.png" srcset="images/characters/avatar-Lil-Monsters-Yodel.png 1x, images/characters/avatar-Lil-Monsters-Yodel@2x.png 2x, images/characters/avatar-Lil-Monsters-Yodel@3x.png 3x" width="200" height="200" alt="Avatar of Yodel"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Yodel.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Yodel.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Yodel@2x.png') }}, {{ url_for('static', filename='images/characters/avatar-Lil-Monsters-Yodel@3x.png') }}" width="200" height="200" alt="Avatar of Yodel"></dd>
 					<dd class="desc">Yodel grew up in a family of singers and loud talkers and could never get a word in edgewise. Then his vast talent for yodeling emerged. Now he performs to adoring fans throughout the world, and always has the loudest voice at the dinner table. Incidentally, he's also a loud proponent of net neutrality, and spends countless hours moderating an internet forum devoted solely to that subject.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-yodel" aria-labelledby="more-yodel name-yodel">See bio and products</a></dd>
 				</div>
@@ -277,7 +277,7 @@
 
 		<section class="collection stargazers">
 			<header>
-				<img src="images/logo-Stargazers.svg" width="119" height="124" alt="Logo of Stargazers">
+				<img src="{{ url_for('static', filename='images/logo-Stargazers.svg') }}" width="119" height="124" alt="Logo of Stargazers">
 				<h1>Explore <span id="name-stargazers">Stargazers</span></h1>
 				<a href="Characters-by-Collection.html" class="button bordered grape" id="more-stargazers" aria-labelledby="more-stargazers name-stargazers">See all characters <span class="arrow" aria-hidden="true">&rarr;</span></a>
 			</header>
@@ -285,28 +285,28 @@
 				<div data-full-img="images/characters/Stargazers-Charmaine.svg">
 					<dt id="name-charmaine">Charmaine</dt>
 					<dd class="title">Olympian Water Poloist</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Stargazers-Charmaine.png" srcset="images/characters/avatar-Stargazers-Charmaine.png 1x, images/characters/avatar-Stargazers-Charmaine.svg 2x" width="200" height="200" alt="Avatar of Charmaine"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Stargazers-Charmaine.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Stargazers-Charmaine.png') }}, {{ url_for('static', filename='images/characters/avatar-Stargazers-Charmaine.svg') }}" width="200" height="200" alt="Avatar of Charmaine"></dd>
 					<dd class="desc">Charmaine loves fossils from every society and planet, and helping to piece together the stories they tell of an earlier time. Once completing university studies in paleontology with a minor in swimming arts, Charmaine immediately transitioned to working on the now-famous Dig of Pleoria.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-charmaine" aria-labelledby="more-charmaine name-charmaine">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Stargazers-Trisaphron.svg">
 					<dt id="name-trisaphron">Trisaphron</dt>
 					<dd class="title">Executive Director, Operations</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Stargazers-Trisaphron.png" srcset="images/characters/avatar-Stargazers-Trisaphron.png 1x, images/characters/avatar-Stargazers-Trisaphron.svg 2x" width="200" height="200" alt="Avatar of Trisaphron"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Stargazers-Trisaphron.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Stargazers-Trisaphron.png') }}, {{ url_for('static', filename='images/characters/avatar-Stargazers-Trisaphron.svg') }}" width="200" height="200" alt="Avatar of Trisaphron"></dd>
 					<dd class="desc">Trisaphron earned a masters degree in practical operations from Omerania University after completing a bachelors of science in impractical mathematics. With a keen ability to watch and understand the nuances of cooperation among production robots, Trisaphron never hesitates to jump in and lend a hand or two or three to educate and improve procedures.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-trisaphron" aria-labelledby="more-trisaphron name-trisaphron">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Stargazers-Gill.svg">
 					<dt id="name-gill">Gill</dt>
 					<dd class="title">Senior Free-floater</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Stargazers-Gill.png" srcset="images/characters/avatar-Stargazers-Gill.png 1x, images/characters/avatar-Stargazers-Gill.svg 2x" width="200" height="200" alt="Avatar of Gill"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Stargazers-Gill.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Stargazers-Gill.png') }}, {{ url_for('static', filename='images/characters/avatar-Stargazers-Gill.svg') }}" width="200" height="200" alt="Avatar of Gill"></dd>
 					<dd class="desc">Gill carries on generations of tradition in his family as a hydrologist specializing in underground reservoirs of aquatic-based planetoids. Of note is his revolutionary studies in the adaptation and accumulation of life in estuaries and cenotes. He volunteers as an instructor in advanced swimming and walking to young Amphibians.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-gill" aria-labelledby="more-gill name-gill">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Stargazers-Mindigo.svg">
 					<dt id="name-mindigo">Mindigo</dt>
 					<dd class="title">Laser Tag Referee</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Stargazers-Mindigo.png" srcset="images/characters/avatar-Stargazers-Mindigo.png 1x, images/characters/avatar-Stargazers-Mindigo.svg 2x" width="200" height="200" alt="Avatar of Mindigo"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Stargazers-Mindigo.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Stargazers-Mindigo.png') }}, {{ url_for('static', filename='images/characters/avatar-Stargazers-Mindigo.svg') }}" width="200" height="200" alt="Avatar of Mindigo"></dd>
 					<dd class="desc">Transportation Technologist Mindigo earned the nickname “MindiGoGo” because of her tireless work in advanced travel and commodity conveyance. After earning a degree in transportation from Amethystopia’s premiere technical college, Mindigo quickly rolled up  through company ranks from cargo hauler to conveyance savant. She is recipient of the coveted Presidential Medal of Moving Stuff.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-mindigo" aria-labelledby="more-mindigo name-mindigo">See bio and products</a></dd>
 				</div>
@@ -315,7 +315,7 @@
 
 		<section class="collection tech-heroes">
 			<header>
-				<img src="images/logo-Tech-Heroes.svg" width="180" height="67" alt="Logo of Tech Heroes">
+				<img src="{{ url_for('static', filename='images/logo-Tech-Heroes.svg') }}" width="180" height="67" alt="Logo of Tech Heroes">
 				<h1>Explore <span id="name-tech-heroes">Tech Heroes</span></h1>
 				<a href="Characters-by-Collection.html" class="button bordered grape" id="more-tech-heroes" aria-labelledby="more-tech-heroes name-tech-heroes">See all characters <span class="arrow" aria-hidden="true">&rarr;</span></a>
 			</header>
@@ -323,28 +323,28 @@
 				<div data-full-img="images/characters/Tech-Heroes-Caped-Coder.svg">
 					<dt id="name-caped-coder">Caped Coder</dt>
 					<dd class="title">Front End Web Developer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Tech-Heroes-Caped-Coder.png" srcset="images/characters/avatar-Tech-Heroes-Caped-Coder.png 1x, images/characters/avatar-Tech-Heroes-Caped-Coder.svg 2x" width="200" height="200" alt="Avatar of Caped Coder"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-Caped-Coder.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-Caped-Coder.png') }}, {{ url_for('static', filename='images/characters/avatar-Tech-Heroes-Caped-Coder.svg') }}" width="200" height="200" alt="Avatar of Caped Coder"></dd>
 					<dd class="desc">Hildegard, with her generous heart and sage advice, is the mother bear to all the animals in the forest. When not actively counselling her community of wild misfits, she masquerades as the Caped Coder, saving the world from bad code.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-caped-coder" aria-labelledby="more-caped-coder name-caped-coder">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Tech-Heroes-The-ArchiTech.svg">
 					<dt id="name-the-architech">The ArchiTech</dt>
 					<dd class="title">IT Security Engineer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Tech-Heroes-The-ArchiTech.png" srcset="images/characters/avatar-Tech-Heroes-The-ArchiTech.png 1x, images/characters/avatar-Tech-Heroes-The-ArchiTech.svg 2x" width="200" height="200" alt="Avatar of The ArchiTech"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-The-ArchiTech.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-The-ArchiTech.png') }}, {{ url_for('static', filename='images/characters/avatar-Tech-Heroes-The-ArchiTech.svg') }}" width="200" height="200" alt="Avatar of The ArchiTech"></dd>
 					<dd class="desc">Computer security gnawing at you? Sounds like a job for the ArchiTech! This clever beaver will build a fortress of security around your computer system as meticulously as he builds dams.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-the-architech" aria-labelledby="more-the-architech name-the-architech">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Tech-Heroes-CloudMaster.svg">
 					<dt id="name-cloudmaster">CloudMaster</dt>
 					<dd class="title">Cloud Engineer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Tech-Heroes-CloudMaster.png" srcset="images/characters/avatar-Tech-Heroes-CloudMaster.png 1x, images/characters/avatar-Tech-Heroes-CloudMaster.svg 2x" width="200" height="200" alt="Avatar of CloudMaster"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-CloudMaster.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-CloudMaster.png') }}, {{ url_for('static', filename='images/characters/avatar-Tech-Heroes-CloudMaster.svg') }}" width="200" height="200" alt="Avatar of CloudMaster"></dd>
 					<dd class="desc">Owen, AKA the "CloudMaster," soars above the technological skies offering cloud infrastructure support wherever it's needed. Owen also excels at standup comedy and is considered by many to be a real hoot.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-cloudmaster" aria-labelledby="more-cloudmaster name-cloudmaster">See bio and products</a></dd>
 				</div>
 				<div data-full-img="images/characters/Tech-Heroes-Commander-Zoom.svg">
 					<dt id="name-commander-zoom">Commander Zoom</dt>
 					<dd class="title">Mobile Developer</dd>
-					<dd class="avatar"><img src="images/characters/avatar-Tech-Heroes-Commander-Zoom.png" srcset="images/characters/avatar-Tech-Heroes-Commander-Zoom.png 1x, images/characters/avatar-Tech-Heroes-Commander-Zoom.svg 2x" width="200" height="200" alt="Avatar of Commander Zoom"></dd>
+					<dd class="avatar"><img src="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-Commander-Zoom.png') }}" srcset="{{ url_for('static', filename='images/characters/avatar-Tech-Heroes-Commander-Zoom.png') }}, {{ url_for('static', filename='images/characters/avatar-Tech-Heroes-Commander-Zoom.svg') }}" width="200" height="200" alt="Avatar of Commander Zoom"></dd>
 					<dd class="desc">Zoom is the Technivores' foremost expert on mobile development and advocates for mobile-optimization and responsive design at every opportunity. Zoom is known for doing flybys and air stunts just for fun.</dd>
 					<dd><a href="Character-Detail-Delores.html" id="more-commander-zoom" aria-labelledby="more-commander-zoom name-commander-zoom">See bio and products</a></dd>
 				</div>
@@ -365,43 +365,43 @@
 		<figure>
 			<figcaption>Follow us</figcaption>
 			<ul>
-				<li><a href="#" target="_blank"><img src="images/icon-instagram-white.svg" width="30" height="30" alt="Instagram"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-facebook-white.svg" width="30" height="30" alt="Facebook"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-twitter-white.svg" width="30" height="30" alt="Twitter"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-youtube-white.svg" width="30" height="30" alt="YouTube"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-instagram-white.svg') }}" width="30" height="30" alt="Instagram"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-facebook-white.svg') }}" width="30" height="30" alt="Facebook"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-twitter-white.svg') }}" width="30" height="30" alt="Twitter"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-youtube-white.svg') }}" width="30" height="30" alt="YouTube"></a></li>
 			</ul>
 		</figure>
-		<img src="images/logo-big-star-H.svg" width="120" height="65" alt="Logo of Big Star Collectibles">
+		<img src="{{ url_for('static', filename='images/logo-big-star-H.svg') }}" width="120" height="65" alt="Logo of Big Star Collectibles">
 		<p><small>&copy; Big Star Collectibles, Inc. &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; <a href="#">Terms</a></small></p>
 		<p><small>This is a fictitious company created by LinkedIn Corporation, or its affiliates, solely for the creation and development of educational training materials. Any resemblance to real products or services is purely coincidental. Information provided about the products or services is also fictitious and should not be construed as representative of actual products or services on the market in a similar product or service category.</small></p>
 	</footer>
 
 	<div id="nav-panel" role="dialog" aria-modal="true" aria-label="Site Navigation Panel">
-		<button type="button"><img src="images/icon-xmark.svg" width="26" height="26" alt="Close"></button>
+		<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="26" height="26" alt="Close"></button>
 		<div id="search-widget-mobile">
 			<button type="button" aria-expanded="false" aria-controls="search-popup-mobile" aria-label="Search Form">
-				<img src="images/icon-search-dark.svg" width="22" height="22" alt="">
+				<img src="{{ url_for('static', filename='images/icon-search-dark.svg') }}" width="22" height="22" alt="">
 				Search
 			</button>
 			<div id="search-popup-mobile" aria-hidden="true">
 				<form method="post" role="search">
 					<input type="search" aria-label="Enter product name" placeholder="Search&hellip;" tabindex="-1" required>
-					<button type="submit" tabindex="-1"><img src="images/icon-arrow-right-grape.svg" width="17" height="14" alt="Search"></button>
+					<button type="submit" tabindex="-1"><img src="{{ url_for('static', filename='images/icon-arrow-right-grape.svg') }}" width="17" height="14" alt="Search"></button>
 				</form>
 			</div>
 		</div><!-- / #search-widget-mobile -->
 		<a href="#">
-			<img src="images/icon-user-v01-dark.svg" width="22" height="22" alt="">
+			<img src="{{ url_for('static', filename='images/icon-user-v01-dark.svg') }}" width="22" height="22" alt="">
 			Account
 		</a>
 		<a href="Cart.html">
-			<img src="images/icon-shopping-cart-v01-dark.svg" width="22" height="21" alt="">
+			<img src="{{ url_for('static', filename='images/icon-shopping-cart-v01-dark.svg') }}" width="22" height="21" alt="">
 			Cart <small>(6 items)</small>
 		</a>
 	</div><!-- / #nav-panel -->
 
 	<div id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="label-cart-panel">
-		<button type="button"><img src="images/icon-xmark.svg" width="16" height="16" alt="Close"></button>
+		<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="16" height="16" alt="Close"></button>
 		<h1 id="label-cart-panel">My Shopping Cart <small>(6 items)</small></h1>
 		<table>
 			<thead>
@@ -417,31 +417,31 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-mug-dolores-white.svg" alt="A white Delores mug" style="padding: 0 10%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-white.svg') }}" alt="A white Delores mug" style="padding: 0 10%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Delores Mug</a></td>
 					<td class="dets">Color: White</td>
 					<td class="qty">4</td>
 					<td class="unit">$16.00</td>
 					<td class="total">$64.00</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-hat-dolores-black.svg" alt="A black Delores hat" style="padding: 0 7.5%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-hat-dolores-black.svg') }}" alt="A black Delores hat" style="padding: 0 7.5%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Delores Hat</a></td>
 					<td class="dets">Color: Black</td>
 					<td class="qty">1</td>
 					<td class="unit">$30.00</td>
 					<td class="total">$30.00</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/stargazers-tote-charmaine.svg" alt="A white Charmaine tote bag" style="padding: 0 8.75%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/stargazers-tote-charmaine.svg') }}" alt="A white Charmaine tote bag" style="padding: 0 8.75%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Charmaine Tote Bag</a></td>
 					<td class="dets"></td>
 					<td class="qty">1</td>
 					<td class="unit">$18.50</td>
 					<td class="total">$18.50</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 			</tbody>
 			<tfoot>
@@ -458,7 +458,7 @@
 	</div><!-- / #cart-panel -->
 
 	<div id="quick-view" role="dialog" aria-modal="true" aria-labelledby="label-quick-view" aria-describedby="desc-quick-view">
-		<button type="button"><img src="images/icon-xmark.svg" width="24" height="24" alt="Close"></button>
+		<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="24" height="24" alt="Close"></button>
 		<div class="wrapper">
 			<header>
 				<h1 id="label-quick-view">null</h1>
@@ -468,12 +468,12 @@
 			<a href="" class="button lg solid gold" id="more-quick-view" aria-labelledby="more-quick-view label-quick-view">See bio and products</a>
 		</div>
 		<div class="wrapper">
-			<img src="images/logomark-big-star-white.svg" alt="">
+			<img src="{{ url_for('static', filename='images/logomark-big-star-white.svg') }}" alt="">
 		</div>
 	</div><!-- / #quick-view -->
 
-	<script src="js/plugins.js?ver=2209212222"></script>
-	<script src="js/main.js?ver=2209301853"></script>
+	<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>
