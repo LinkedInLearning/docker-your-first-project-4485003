@@ -64,3 +64,5 @@ Docker image pull python
 https://hub.docker.com/_/python
 
 Docker image pull python:3.12-rc-bookworm
+
+*** 03_02 ***
