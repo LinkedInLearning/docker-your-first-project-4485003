@@ -39,3 +39,34 @@ Docker build --rm=true .
 Docker build --no-cache .
 
 Docker build --help
+
+*** 03_01 ***
+Docker search python
+
+Docker search --filter is-official=true python
+
+Docker search --filter stars=100 python
+
+Docker search --filter is-automated=true python
+
+Docker search --filter is-official=true --filter stars=10 --filter is-automated=false python
+
+Docker search --limit 4 python
+
+Docker search --no-trunc python
+
+Docker search --format "{{.Name}}: {{.Description}}" --no-trunc python
+
+Docker search --format "table {{.Name}}\t{{.IsAutomated}}\t{{.IsOfficial}}\t{{.Description}}\t{{.StarCount}}" python
+
+Docker search --format "table {{.Name}}\t{{.IsOfficial}}\t{{.Description}}\t{{.StarCount}}" --filter is-official=true --filter stars=10 --no-trunc python
+
+Docker search --help
+
+Docker image pull python
+
+https://hub.docker.com/_/python
+
+Docker image pull python:3.12-rc-bookworm
+
+Docker image pull --help
