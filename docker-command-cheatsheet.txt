@@ -22,3 +22,18 @@ https://code.visualstudio.com/download
 
 *** 02_01 ***
 Code for this video is in the dockerfile
+
+*** 02_02 ***
+Docker build [OPTIONS] PATH | URL | -
+
+https://docs.docker.com/engine/reference/commandline/build/
+
+Docker build .
+
+Docker build -f [dockerfile] .
+
+Docker build --force-rm=true .
+
+Docker build --rm=true .
+
+Docker build --no-cache .
