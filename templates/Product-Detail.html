@@ -1,38 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<title>Delores Mug | Big Star Collectibles</title>
-
-	<!-- favicons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="images/favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-
-	<!-- stylesheets -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Roboto:wght@700&display=swap">
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/common.css?ver=2209301853">
-	<link rel="stylesheet" href="css/product.css?ver=2209301557">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<title>Product Detail | Big Star Collectibles</title>
+	
+		<!-- favicons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='images/favicons/apple-icon-57x57.png') }}">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='images/favicons/apple-icon-60x60.png') }}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='images/favicons/apple-icon-72x72.png') }}">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='images/favicons/apple-icon-76x76.png') }}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='images/favicons/apple-icon-114x114.png') }}">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/favicons/apple-icon-120x120.png') }}">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='images/favicons/apple-icon-144x144.png') }}">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='images/favicons/apple-icon-152x152.png') }}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-icon-180x180.png') }}">
+		<link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='images/favicons/android-icon-192x192.png') }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/favicons/favicon-96x96.png') }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}">
+		<link rel="manifest" href="{{ url_for('static', filename='images/favicons/manifest.json') }}">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="{{ url_for('static', filename='images/favicons/ms-icon-144x144.png') }}">
+		<meta name="theme-color" content="#ffffff">
+	
+		<!-- stylesheets -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Roboto:wght@700&display=swap">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/product.css') }}">
+	</head>
 <body>
 
 	<div id="skip">
@@ -40,7 +40,7 @@
 	</div>
 
 	<header id="banner">
-		<a href="./"><img src="images/logomark-big-star-white.svg" width="43" height="50" alt="Big Star Collectibles"></a>
+		<a href="./"><img src="{{ url_for('static', filename='images/logomark-big-star-white.svg') }}" width="43" height="50" alt="Big Star Collectibles"></a>
 		<nav aria-label="Site">
 			<ul>
 				<li><a href="./">Home</a></li>
@@ -90,7 +90,7 @@
 						<figure>
 							<figcaption>About Big Star Collectibles</figcaption>
 							<ul>
-								<li><a href="Static-About.html">About us</a></li>
+								<li><a href="Static-About.html" aria-current="page">About us</a></li>
 								<li><a href="#">Our story</a></li>
 								<li><a href="#">Our team</a></li>
 								<li><a href="#">FAQ</a></li>
@@ -144,21 +144,21 @@
 				</li>
 				<li><a href="Contact-Us.html">Contact</a></li>
 			</ul>
-			<button type="button"><img src="images/icon-menu.svg" width="30" height="24" alt="Site Navigation Panel"></button>
+			<button type="button"><img src="{{ url_for('static', filename='images/icon-menu.svg') }}" width="30" height="24" alt="Site Navigation Panel"></button>
 		</nav>
 		<div id="search-widget">
-			<button type="button" aria-expanded="false" aria-controls="search-popup"><img src="images/icon-search-white.svg" width="36" height="36" alt="Search Form"></button>
+			<button type="button" aria-expanded="false" aria-controls="search-popup"><img src="{{ url_for('static', filename='images/icon-search-white.svg') }}" width="36" height="36" alt="Search Form"></button>
 			<div id="search-popup" aria-hidden="true">
 				<form method="post" role="search">
 					<input type="search" aria-label="Enter product name" placeholder="Search&hellip;" tabindex="-1" required>
 					<button type="submit" tabindex="-1">Search</button>
 				</form>
-				<button type="button" tabindex="-1"><img src="images/icon-xmark.svg" width="26" height="26" alt="Close"></button>
+				<button type="button" tabindex="-1"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="26" height="26" alt="Close"></button>
 			</div>
 		</div><!-- / #search-widget -->
-		<a href="#"><img src="images/icon-user-v01-white.svg" width="36" height="36" alt="Account"></a>
+		<a href="#"><img src="{{ url_for('static', filename='images/icon-user-v01-white.svg') }}" width="36" height="36" alt="Account"></a>
 		<button type="button">
-			<img src="images/icon-shopping-cart-v01-white.svg" width="36" height="33" alt="Cart Panel">
+			<img src="{{ url_for('static', filename='images/icon-shopping-cart-v01-white.svg') }}" width="36" height="33" alt="Cart Panel">
 			<span class="visually-hidden">(</span><span class="num">6</span> <span class="visually-hidden">items)</span>
 		</button>
 	</header>
@@ -187,17 +187,17 @@
 		<section id="product" itemscope itemtype="https://schema.org/Product">
 			<header>
 				<div class="wrapper">
-					<img src="images/products/binaryville-mug-dolores-white.svg" alt="A white Delores mug" style="padding: 0 9.917%;">
+					<img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-white.svg') }}" alt="A white Delores mug" style="padding: 0 9.917%;">
 				</div>
 				<h1 itemprop="name">Delores	Mug</h1>
 				<link itemprop="url" href="https://example.com/binaryville-mug-dolores">
 				<b itemprop="offers" itemscope itemtype="https://schema.org/Offer"><data value="USD" itemprop="priceCurrency">$</data><data value="16.00" itemprop="price">16.00</data></b>
 				<p class="rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-					<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-					<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-					<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-					<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-					<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+					<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+					<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+					<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+					<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+					<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 					<span class="visually-hidden">Rating: <span itemprop="ratingValue">4</span> out of <span itemprop="bestRating">5</span> stars</span>
 					(<span itemprop="ratingCount">130</span><span class="visually-hidden"> user ratings</span>)
 					<a href="#">Write a review</a>
@@ -211,21 +211,21 @@
 					<div>
 						<input  id="product-color-white" type="radio" name="product-color" value="white" required checked>
 						<label for="product-color-white" data-full-img-alt="A white Delores mug">
-							<img src="images/products/binaryville-mug-dolores-white.svg" width="80" height="80" alt="" itemprop="image" style="padding: 0 13.925%;">
+							<img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-white.svg') }}" width="80" height="80" alt="" itemprop="image" style="padding: 0 13.925%;">
 							White
 						</label>
 					</div>
 					<div>
 						<input  id="product-color-black" type="radio" name="product-color" value="black">
 						<label for="product-color-black" data-full-img-alt="A black Delores mug">
-							<img src="images/products/binaryville-mug-dolores-black.svg" width="80" height="80" alt="" itemprop="image" style="padding: 0 13.925%;">
+							<img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-black.svg') }}" width="80" height="80" alt="" itemprop="image" style="padding: 0 13.925%;">
 							Black
 						</label>
 					</div>
 					<div>
 						<input  id="product-color-gray" type="radio" name="product-color" value="gray">
 						<label for="product-color-gray" data-full-img-alt="A gray Delores mug">
-							<img src="images/products/binaryville-mug-dolores-gray.svg" width="80" height="80" alt="" itemprop="image" style="padding: 0 13.925%;">
+							<img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-gray.svg') }}" width="80" height="80" alt="" itemprop="image" style="padding: 0 13.925%;">
 							Gray
 						</label>
 					</div>
@@ -255,14 +255,14 @@
 			<dl class="prod-list">
 				<div>
 					<dt><a href="Product-Detail.html">Delores Framed Art</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-artwork-dolores-wood.svg" alt="A Delores wood framed art" style="padding: 0 5.357%;"></a></dd>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-artwork-dolores-wood.svg') }}" alt="A Delores wood framed art" style="padding: 0 5.357%;"></a></dd>
 					<dd class="offer">$45.00</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
 						(130<span class="visually-hidden"> user ratings</span>)
 					</dd>
@@ -270,14 +270,14 @@
 				</div>
 				<div>
 					<dt><a href="Product-Detail.html">Delores Hat</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-hat-dolores-black.svg" alt="A black Delores hat" style="padding: 0 7.5%;"></a></dd>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-hat-dolores-black.svg') }}" alt="A black Delores hat" style="padding: 0 7.5%;"></a></dd>
 					<dd class="offer">$29.00</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
 						(50<span class="visually-hidden"> user ratings</span>)
 					</dd>
@@ -285,14 +285,14 @@
 				</div>
 				<div>
 					<dt><a href="Product-Detail.html">Blade Mug</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/lil-monsters-mug-blade-blue.svg" alt="A blue Blade mug" style="padding: 0 7.143%;"></a></dd>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/lil-monsters-mug-blade-blue.svg') }}" alt="A blue Blade mug" style="padding: 0 7.143%;"></a></dd>
 					<dd class="offer">$16.00</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
 						(130<span class="visually-hidden"> user ratings</span>)
 					</dd>
@@ -300,14 +300,14 @@
 				</div>
 				<div>
 					<dt><a href="Product-Detail.html">Delores T-Shirt</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-tshirt-dolores-black.svg" alt="A black Delores t-shirt" style="padding: 0 15.714%;"></a></dd>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-tshirt-dolores-black.svg') }}" alt="A black Delores t-shirt" style="padding: 0 15.714%;"></a></dd>
 					<dd class="offer">$26.00</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
 						(107<span class="visually-hidden"> user ratings</span>)
 					</dd>
@@ -330,43 +330,43 @@
 		<figure>
 			<figcaption>Follow us</figcaption>
 			<ul>
-				<li><a href="#" target="_blank"><img src="images/icon-instagram-white.svg" width="30" height="30" alt="Instagram"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-facebook-white.svg" width="30" height="30" alt="Facebook"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-twitter-white.svg" width="30" height="30" alt="Twitter"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-youtube-white.svg" width="30" height="30" alt="YouTube"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-instagram-white.svg') }}" width="30" height="30" alt="Instagram"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-facebook-white.svg') }}" width="30" height="30" alt="Facebook"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-twitter-white.svg') }}" width="30" height="30" alt="Twitter"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-youtube-white.svg') }}" width="30" height="30" alt="YouTube"></a></li>
 			</ul>
 		</figure>
-		<img src="images/logo-big-star-H.svg" width="120" height="65" alt="Logo of Big Star Collectibles">
+		<img src="{{ url_for('static', filename='images/logo-big-star-H.svg') }}" width="120" height="65" alt="Logo of Big Star Collectibles">
 		<p><small>&copy; Big Star Collectibles, Inc. &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; <a href="#">Terms</a></small></p>
 		<p><small>This is a fictitious company created by LinkedIn Corporation, or its affiliates, solely for the creation and development of educational training materials. Any resemblance to real products or services is purely coincidental. Information provided about the products or services is also fictitious and should not be construed as representative of actual products or services on the market in a similar product or service category.</small></p>
 	</footer>
 
 	<div id="nav-panel" role="dialog" aria-modal="true" aria-label="Site Navigation Panel">
-		<button type="button"><img src="images/icon-xmark.svg" width="26" height="26" alt="Close"></button>
+		<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="26" height="26" alt="Close"></button>
 		<div id="search-widget-mobile">
 			<button type="button" aria-expanded="false" aria-controls="search-popup-mobile" aria-label="Search Form">
-				<img src="images/icon-search-dark.svg" width="22" height="22" alt="">
+				<img src="{{ url_for('static', filename='images/icon-search-dark.svg') }}" width="22" height="22" alt="">
 				Search
 			</button>
 			<div id="search-popup-mobile" aria-hidden="true">
 				<form method="post" role="search">
 					<input type="search" aria-label="Enter product name" placeholder="Search&hellip;" tabindex="-1" required>
-					<button type="submit" tabindex="-1"><img src="images/icon-arrow-right-grape.svg" width="17" height="14" alt="Search"></button>
+					<button type="submit" tabindex="-1"><img src="{{ url_for('static', filename='images/icon-arrow-right-grape.svg') }}" width="17" height="14" alt="Search"></button>
 				</form>
 			</div>
 		</div><!-- / #search-widget-mobile -->
 		<a href="#">
-			<img src="images/icon-user-v01-dark.svg" width="22" height="22" alt="">
+			<img src="{{ url_for('static', filename='images/icon-user-v01-dark.svg') }}" width="22" height="22" alt="">
 			Account
 		</a>
 		<a href="Cart.html">
-			<img src="images/icon-shopping-cart-v01-dark.svg" width="22" height="21" alt="">
+			<img src="{{ url_for('static', filename='images/icon-shopping-cart-v01-dark.svg') }}" width="22" height="21" alt="">
 			Cart <small>(6 items)</small>
 		</a>
 	</div><!-- / #nav-panel -->
 
 	<div id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="label-cart-panel">
-		<button type="button"><img src="images/icon-xmark.svg" width="16" height="16" alt="Close"></button>
+		<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="16" height="16" alt="Close"></button>
 		<h1 id="label-cart-panel">My Shopping Cart <small>(6 items)</small></h1>
 		<table>
 			<thead>
@@ -382,31 +382,31 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-mug-dolores-white.svg" alt="A white Delores mug" style="padding: 0 10%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-white.svg') }}" alt="A white Delores mug" style="padding: 0 10%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Delores Mug</a></td>
 					<td class="dets">Color: White</td>
 					<td class="qty">4</td>
 					<td class="unit">$16.00</td>
 					<td class="total">$64.00</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-hat-dolores-black.svg" alt="A black Delores hat" style="padding: 0 7.5%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-hat-dolores-black.svg') }}" alt="A black Delores hat" style="padding: 0 7.5%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Delores Hat</a></td>
 					<td class="dets">Color: Black</td>
 					<td class="qty">1</td>
 					<td class="unit">$30.00</td>
 					<td class="total">$30.00</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/stargazers-tote-charmaine.svg" alt="A white Charmaine tote bag" style="padding: 0 8.75%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/stargazers-tote-charmaine.svg') }}" alt="A white Charmaine tote bag" style="padding: 0 8.75%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Charmaine Tote Bag</a></td>
 					<td class="dets"></td>
 					<td class="qty">1</td>
 					<td class="unit">$18.50</td>
 					<td class="total">$18.50</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 			</tbody>
 			<tfoot>
@@ -422,8 +422,8 @@
 		</footer>
 	</div><!-- / #cart-panel -->
 
-	<script src="js/plugins.js?ver=2209212222"></script>
-	<script src="js/main.js?ver=2209301853"></script>
+	<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>

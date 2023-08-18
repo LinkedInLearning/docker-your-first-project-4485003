@@ -22,9 +22,12 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+	- Docker Desktop
+    - VSCode
+    - Git Bash
+2. Clone this repository into your local machine using the Git Bash command `git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.git`
+3. Switch between branches using the Git Bash command `git checkout CHAPTER#_MOVIE#`
+4. View all available branches using the Git Bash command `git branch`
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)

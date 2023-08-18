@@ -1,38 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<title>Delores | Big Star Collectibles</title>
-
-	<!-- favicons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="images/favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-
-	<!-- stylesheets -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Roboto:wght@700&display=swap">
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/common.css?ver=2209301853">
-	<link rel="stylesheet" href="css/character.css?ver=2209100051">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<title>Products | Big Star Collectibles</title>
+	
+		<!-- favicons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='images/favicons/apple-icon-57x57.png') }}">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='images/favicons/apple-icon-60x60.png') }}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='images/favicons/apple-icon-72x72.png') }}">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='images/favicons/apple-icon-76x76.png') }}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='images/favicons/apple-icon-114x114.png') }}">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/favicons/apple-icon-120x120.png') }}">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='images/favicons/apple-icon-144x144.png') }}">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='images/favicons/apple-icon-152x152.png') }}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-icon-180x180.png') }}">
+		<link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='images/favicons/android-icon-192x192.png') }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/favicons/favicon-96x96.png') }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}">
+		<link rel="manifest" href="{{ url_for('static', filename='images/favicons/manifest.json') }}">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="{{ url_for('static', filename='images/favicons/ms-icon-144x144.png') }}">
+		<meta name="theme-color" content="#ffffff">
+	
+		<!-- stylesheets -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Roboto:wght@700&display=swap">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+	</head>
 <body>
 
 	<div id="skip">
@@ -40,7 +39,7 @@
 	</div>
 
 	<header id="banner">
-		<a href="./"><img src="images/logomark-big-star-white.svg" width="43" height="50" alt="Big Star Collectibles"></a>
+		<a href="./"><img src="{{ url_for('static', filename='images/logomark-big-star-white.svg') }}" width="43" height="50" alt="Big Star Collectibles"></a>
 		<nav aria-label="Site">
 			<ul>
 				<li><a href="./">Home</a></li>
@@ -90,7 +89,7 @@
 						<figure>
 							<figcaption>About Big Star Collectibles</figcaption>
 							<ul>
-								<li><a href="Static-About.html">About us</a></li>
+								<li><a href="Static-About.html" aria-current="page">About us</a></li>
 								<li><a href="#">Our story</a></li>
 								<li><a href="#">Our team</a></li>
 								<li><a href="#">FAQ</a></li>
@@ -144,81 +143,26 @@
 				</li>
 				<li><a href="Contact-Us.html">Contact</a></li>
 			</ul>
-			<button type="button"><img src="images/icon-menu.svg" width="30" height="24" alt="Site Navigation Panel"></button>
+			<button type="button"><img src="{{ url_for('static', filename='images/icon-menu.svg') }}" width="30" height="24" alt="Site Navigation Panel"></button>
 		</nav>
 		<div id="search-widget">
-			<button type="button" aria-expanded="false" aria-controls="search-popup"><img src="images/icon-search-white.svg" width="36" height="36" alt="Search Form"></button>
+			<button type="button" aria-expanded="false" aria-controls="search-popup"><img src="{{ url_for('static', filename='images/icon-search-white.svg') }}" width="36" height="36" alt="Search Form"></button>
 			<div id="search-popup" aria-hidden="true">
 				<form method="post" role="search">
 					<input type="search" aria-label="Enter product name" placeholder="Search&hellip;" tabindex="-1" required>
 					<button type="submit" tabindex="-1">Search</button>
 				</form>
-				<button type="button" tabindex="-1"><img src="images/icon-xmark.svg" width="26" height="26" alt="Close"></button>
+				<button type="button" tabindex="-1"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="26" height="26" alt="Close"></button>
 			</div>
 		</div><!-- / #search-widget -->
-		<a href="#"><img src="images/icon-user-v01-white.svg" width="36" height="36" alt="Account"></a>
+		<a href="#"><img src="{{ url_for('static', filename='images/icon-user-v01-white.svg') }}" width="36" height="36" alt="Account"></a>
 		<button type="button">
-			<img src="images/icon-shopping-cart-v01-white.svg" width="36" height="33" alt="Cart Panel">
+			<img src="{{ url_for('static', filename='images/icon-shopping-cart-v01-white.svg') }}" width="36" height="33" alt="Cart Panel">
 			<span class="visually-hidden">(</span><span class="num">6</span> <span class="visually-hidden">items)</span>
 		</button>
 	</header>
 
 	<main id="main">
-
-		<section id="character">
-			<div class="wrapper">
-				<img src="images/characters/Binaryville-Delores.svg" alt="Full image of Delores">
-				<blockquote>
-					<p>I compute, therefore I am.</p>
-				</blockquote>
-			</div>
-			<header>
-				<img src="images/logo-Binaryville.svg" width="180" height="94" alt="Binaryville">
-				<hgroup>
-					<h1>Delores</h1>
-					<p>Forensic Accountant</p>
-				</hgroup>
-			</header>
-			<p>Dolores robot is a computational genius who performs calculations for various Binaryville businesses and organizations. In her spare time, Dolores has been noodling on the creation of the perfect web browser that will make all other browsers obsolete. We're rooting for you, Dolores!</p>
-			<dl>
-				<div>
-					<dt>Neighborhood of origin</dt>
-					<dd>West Binaryville</dd>
-				</div>
-				<div>
-					<dt>Favorite food</dt>
-					<dd>toasted marshmallows</dd>
-				</div>
-				<div>
-					<dt>Favorite music genre</dt>
-					<dd>J-pop</dd>
-				</div>
-				<div>
-					<dt>Hobby</dt>
-					<dd>Creating a new web browser</dd>
-				</div>
-				<div>
-					<dt>Favorite film</dt>
-					<dd>Ex Machina (2015)</dd>
-				</div>
-				<div>
-					<dt>Means of ambulation</dt>
-					<dd>walking</dd>
-				</div>
-				<div>
-					<dt>Favorite footwear</dt>
-					<dd>none</dd>
-				</div>
-				<div>
-					<dt>Dream job</dt>
-					<dd>landscape painter</dd>
-				</div>
-				<div>
-					<dt>Singing voice</dt>
-					<dd>bass</dd>
-				</div>
-			</dl>
-		</section><!-- / #character -->
 
 		<section id="products">
 			<header>
@@ -231,19 +175,14 @@
 							<span aria-hidden="true">&rsaquo;</span>
 						</li>
 						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-							<a href="Characters-by-Collection.html" itemprop="item"><span itemprop="name">Binaryville</span></a>
+							<a href="Product-List.html" itemprop="item" aria-current="true"><span itemprop="name">All products</span></a>
 							<meta itemprop="position" content="2">
-							<span aria-hidden="true">&rsaquo;</span>
-						</li>
-						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-							<a href="Character-Detail-Delores.html" itemprop="item" aria-current="true"><span itemprop="name">Delores</span></a>
-							<meta itemprop="position" content="3">
 						</li>
 					</ol>
 				</nav>
 				<p>6 Products</p>
 				<div id="wrapper-in-prod-header">
-					<button type="button"><img src="images/icon-xmark.svg" width="26" height="26" alt="Close"></button>
+					<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="26" height="26" alt="Close"></button>
 					<p>6 Products</p>
 					<section>
 						<header>
@@ -458,96 +397,167 @@
 			</header>
 			<dl class="prod-list">
 				<div>
-					<dt><a href="Product-Detail.html">Delores Framed Art</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-artwork-dolores-wood.svg" alt="A Delores wood framed art" style="padding: 0 5.357%;"></a></dd>
-					<dd class="offer">$45.00</dd>
-					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
-						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
-						(130<span class="visually-hidden"> user ratings</span>)
-					</dd>
-					<dd class="desc">Our framed artwork is hand-printed on our proprietary triple-layer organic, acid-free cotton stock, and shipped ready to hang in one of our in-house hand-made frames.</dd>
-				</div>
-				<div>
-					<dt><a href="Product-Detail.html">Delores Mug</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-mug-dolores-white.svg" alt="A white Delores mug" style="padding: 0 7.143%;"></a></dd>
+					<dt><a href="Product-Detail.html">Blade Mug</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/lil-monsters-mug-blade-blue.svg') }}" alt="A blue Blade mug" style="padding: 0 7.143%;"></a></dd>
 					<dd class="offer">$16.00</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<span class="visually-hidden">Rating: 5 out of 5 stars</span>
-						(85<span class="visually-hidden"> user ratings</span>)
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
+						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
+						(130<span class="visually-hidden"> user ratings</span>)
 					</dd>
 					<dd class="desc">Our strong ceramic mug, with its comfortable D-shaped handle, is microwave and dishwasher safe, and available in one size: 11 oz (3.2" diameter x 3.8" h). </dd>
 				</div>
 				<div>
-					<dt><a href="Product-Detail.html">Delores T-Shirt</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-tshirt-dolores-black.svg" alt="A black Delores t-shirt" style="padding: 0 15.714%;"></a></dd>
-					<dd class="offer">$26.00</dd>
+					<dt><a href="Product-Detail.html">Blade Notebook</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/lil-monsters-notebook-blade.svg') }}" alt="A white Blade notebook" style="padding: 0 18.75%;"></a></dd>
+					<dd class="offer">$18.00</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<span class="visually-hidden">Rating: 5 out of 5 stars</span>
+						(85<span class="visually-hidden"> user ratings</span>)
+					</dd>
+					<dd class="desc">Available with lined, graph, or blank pages, our lay-flat notebooks are made with curl-resistant ever-so-slightly textured smudge-proof paper that’s ideal for your ideas and creations. </dd>
+				</div>
+				<div>
+					<dt><a href="Product-Detail.html">Blade Pillow</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/lil-monsters-pillow-blade.svg') }}" alt="A white Blade pillow" style="padding: 0 5.892%;"></a></dd>
+					<dd class="offer">$30.00</dd>
+					<dd class="rating">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
 						(107<span class="visually-hidden"> user ratings</span>)
 					</dd>
-					<dd class="desc">Our t-shirts are made from ring-spun, long-staple organic cotton that's ethically sourced from member farms of local organic cotton cooperatives. Original artwork is screen-printed using PVC- and phthalate-free inks. Features crew-neck styling, shoulder-to-shoulder taping, and a buttery soft feel. Machine-wash warm, tumble-dry low.</dd>
+					<dd class="desc">Constructed of our own organic cotton weave, the pillows are stuffed with organic Kapok fibers harvested in April and May in Hawaii when the fruits mature and fall from the trees. 10 percent of each sale is donated to Hawaii's botanical gardens. </dd>
 				</div>
 				<div>
-					<dt><a href="Product-Detail.html">Delores Trading Card</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-cards-dolores-front.svg" alt="The front of a Delores trading card" style="padding: 0 17.5%;"></a></dd>
+					<dt><a href="Product-Detail.html">Blade Trading Card</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/lil-monsters-cards-blade-front.svg') }}" alt="The front of a Blade trading card" style="padding: 0 17.5%;"></a></dd>
 					<dd class="offer">$19.99</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
 						(255<span class="visually-hidden"> user ratings</span>)
 					</dd>
 					<dd class="desc">Our deluxe, limited-edition trading cards are printed on our proprietary, textured, triple-layer organic stock. After printing, all cards are silk laminated to better preserve the cards and to best showcase its character and copy. In addition, each of our cards is encased in an acid-free rigid card sleeve to further protect it from UV rays, moisture, and handling. </dd>
 				</div>
 				<div>
-					<dt><a href="Product-Detail.html">Delores Hat</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-hat-dolores-black.svg" alt="A black Delores hat" style="padding: 0 7.5%;"></a></dd>
-					<dd class="offer">$29.00</dd>
+					<dt><a href="Product-Detail.html">Charmaine Framed Art</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/stargazers-artwork-charmaine-black.svg') }}" alt="A Charmaine black framed art" style="padding: 0 5.357%;"></a></dd>
+					<dd class="offer">$45.00</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="" class="nonscoring">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
 						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
 						(50<span class="visually-hidden"> user ratings</span>)
 					</dd>
-					<dd class="desc">Cheer the team on in style with our unstructured, low crown, six-panel baseball cap made of 100% organic cotton twill. Featuring our original Big Star Collectibles artwork, screen-printed with PVC- and phthalate-free inks. Complete with matching sewn ventilation eyelets, and adjustable fabric closure. </dd>
+					<dd class="desc">Our framed artwork is hand-printed on our proprietary triple-layer organic, acid-free cotton stock, and shipped ready to hang in one of our in-house hand-made frames. </dd>
 				</div>
 				<div>
-					<dt><a href="Product-Detail.html">Delores Apron</a></dt>
-					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-apron-dolores-white.svg" alt="A white Dolores apron" style="padding: 0 10.357%;"></a></dd>
-					<dd class="offer">$24.00</dd>
+					<dt><a href="Product-Detail.html">Charmaine Tote Bag</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/stargazers-tote-charmaine.svg') }}" alt="A white Charmaine tote bag" style="padding: 0 9.241%;"></a></dd>
+					<dd class="offer">$18.50</dd>
 					<dd class="rating">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
-						<img src="images/icon-rating-star-purpleviolet.svg" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
 						<span class="visually-hidden">Rating: 5 out of 5 stars</span>
 						(24<span class="visually-hidden"> user ratings</span>)
 					</dd>
-					<dd class="desc">Everyon's a chef in our eco-friendly apron made from 55% organic cotton and 45% recycled polyester. Showcasing your favorite Big Star Collectibles design, the apron is screen-printed in PVC- and phthalate-free inks. Apron measures 24 inches wide by 30 inches long and is easily adjustable around the neck and waist with one continuous strap. Machine-wash warm, tumble-dry low. </dd>
+					<dd class="desc">Use as a reusable shopping bag at the farmers market, as a heavy-duty tote for business and play, and as a unique and useful fashion item. </dd>
+				</div>
+				<div>
+					<dt><a href="Product-Detail.html">Charmaine T-Shirt</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/stargazers-tshirt-charmaine-black.svg') }}" alt="A black Charmaine t-shirt" style="padding: 0 15.714%;"></a></dd>
+					<dd class="offer">$19.99</dd>
+					<dd class="rating">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
+						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
+						(77<span class="visually-hidden"> user ratings</span>)
+					</dd>
+					<dd class="desc">Our t-shirts are made from ring-spun, long-staple organic cotton that's ethically sourced from member farms of local organic cotton cooperatives. Original artwork is screen-printed using PVC- and phthalate-free inks. Features crew-neck styling, shoulder-to-shoulder taping, and a buttery soft feel. Machine-wash warm, tumble-dry low. </dd>
+				</div>
+				<div>
+					<dt><a href="Product-Detail.html">Charmaine Trading Card</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/stargazers-cards-charmaine-front.svg') }}" alt="The front of a Charmaine trading card" style="padding: 0 17.5%;"></a></dd>
+					<dd class="offer">$19.99</dd>
+					<dd class="rating">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="" class="nonscoring">
+						<span class="visually-hidden">Rating: 4 out of 5 stars</span>
+						(150<span class="visually-hidden"> user ratings</span>)
+					</dd>
+					<dd class="desc">Our deluxe, limited-edition trading cards are printed on our proprietary, textured, triple-layer organic stock. After printing, all cards are silk laminated to better preserve the cards and to best showcase its character and copy. In addition, each of our cards is encased in an acid-free rigid card sleeve to further protect it from UV rays, moisture, and handling. </dd>
+				</div>
+				<div>
+					<dt><a href="Product-Detail.html">Delores Mug</a></dt>
+					<dd><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-black.svg') }}" alt="A black Delores mug" style="padding: 0 7.143%;"></a></dd>
+					<dd class="offer">$16.00</dd>
+					<dd class="rating">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<img src="{{ url_for('static', filename='images/icon-rating-star-purpleviolet.svg') }}" width="16" height="16" alt="">
+						<span class="visually-hidden">Rating: 5 out of 5 stars</span>
+						(130<span class="visually-hidden"> user ratings</span>)
+					</dd>
+					<dd class="desc">Our strong ceramic mug, with its comfortable D-shaped handle, is microwave and dishwasher safe, and available in one size: 11 oz (3.2" diameter x 3.8" h). </dd>
 				</div>
 			</dl>
+			<nav aria-label="Pagination">
+				<ul>
+					<li aria-hidden="true">
+						<a class="prev">
+							<svg width="10" height="17" viewBox="0 0 10 17" aria-hidden="true">
+								<path d="M0.474979 7.35721C-0.158326 7.98503 -0.158326 9.00009 0.474979 9.62416L6.94835 16.0415C7.57407 16.6431 8.56764 16.6431 9.19715 16.0415C9.83804 15.425 9.857 14.4099 9.23507 13.7746L3.90696 8.49256L9.23507 3.21053C9.84183 2.59022 9.84183 1.60524 9.23507 0.981173C8.61314 0.345825 7.58924 0.327028 6.94835 0.943578L0.474979 7.35721Z" stroke-width="0" />
+							</svg>
+							Previous <span class="visually-hidden">page</span>
+						</a>
+					</li>
+					<li><a href="#" aria-current="page"><span class="visually-hidden">Page</span> 1</a></li>
+					<li><a href="#"><span class="visually-hidden">Page</span> 2</a></li>
+					<li><a href="#"><span class="visually-hidden">Page</span> 3</a></li>
+					<li><a href="#"><span class="visually-hidden">Page</span> 4</a></li>
+					<li><span class="visually-hidden">Ellipsis</span><span aria-hidden="true">&hellip;</span></li>
+					<li><a href="#"><span class="visually-hidden">Page</span> 32</a></li>
+					<li>
+						<a href="#" class="next">
+							Next <span class="visually-hidden">page</span>
+							<svg width="10" height="17" viewBox="0 0 10 17" aria-hidden="true">
+								<path d="M9.21545 9.62815C9.84876 9.00032 9.84876 7.98526 9.21545 7.3612L2.74208 0.94381C2.11636 0.342298 1.1228 0.342298 0.493282 0.94381C-0.147608 1.56036 -0.166569 2.57541 0.45536 3.21076L5.78347 8.49279L0.455359 13.7748C-0.151401 14.3951 -0.151401 15.3801 0.455359 16.0042C1.07729 16.6395 2.10119 16.6583 2.74208 16.0418L9.21545 9.62815Z" stroke-width="0" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</section><!-- / #products -->
 
 	</main>
@@ -564,43 +574,43 @@
 		<figure>
 			<figcaption>Follow us</figcaption>
 			<ul>
-				<li><a href="#" target="_blank"><img src="images/icon-instagram-white.svg" width="30" height="30" alt="Instagram"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-facebook-white.svg" width="30" height="30" alt="Facebook"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-twitter-white.svg" width="30" height="30" alt="Twitter"></a></li>
-				<li><a href="#" target="_blank"><img src="images/icon-youtube-white.svg" width="30" height="30" alt="YouTube"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-instagram-white.svg') }}" width="30" height="30" alt="Instagram"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-facebook-white.svg') }}" width="30" height="30" alt="Facebook"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-twitter-white.svg') }}" width="30" height="30" alt="Twitter"></a></li>
+				<li><a href="#" target="_blank"><img src="{{ url_for('static', filename='images/icon-youtube-white.svg') }}" width="30" height="30" alt="YouTube"></a></li>
 			</ul>
 		</figure>
-		<img src="images/logo-big-star-H.svg" width="120" height="65" alt="Logo of Big Star Collectibles">
+		<img src="{{ url_for('static', filename='images/logo-big-star-H.svg') }}" width="120" height="65" alt="Logo of Big Star Collectibles">
 		<p><small>&copy; Big Star Collectibles, Inc. &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; <a href="#">Terms</a></small></p>
 		<p><small>This is a fictitious company created by LinkedIn Corporation, or its affiliates, solely for the creation and development of educational training materials. Any resemblance to real products or services is purely coincidental. Information provided about the products or services is also fictitious and should not be construed as representative of actual products or services on the market in a similar product or service category.</small></p>
 	</footer>
 
 	<div id="nav-panel" role="dialog" aria-modal="true" aria-label="Site Navigation Panel">
-		<button type="button"><img src="images/icon-xmark.svg" width="26" height="26" alt="Close"></button>
+		<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="26" height="26" alt="Close"></button>
 		<div id="search-widget-mobile">
 			<button type="button" aria-expanded="false" aria-controls="search-popup-mobile" aria-label="Search Form">
-				<img src="images/icon-search-dark.svg" width="22" height="22" alt="">
+				<img src="{{ url_for('static', filename='images/icon-search-dark.svg') }}" width="22" height="22" alt="">
 				Search
 			</button>
 			<div id="search-popup-mobile" aria-hidden="true">
 				<form method="post" role="search">
 					<input type="search" aria-label="Enter product name" placeholder="Search&hellip;" tabindex="-1" required>
-					<button type="submit" tabindex="-1"><img src="images/icon-arrow-right-grape.svg" width="17" height="14" alt="Search"></button>
+					<button type="submit" tabindex="-1"><img src="{{ url_for('static', filename='images/icon-arrow-right-grape.svg') }}" width="17" height="14" alt="Search"></button>
 				</form>
 			</div>
 		</div><!-- / #search-widget-mobile -->
 		<a href="#">
-			<img src="images/icon-user-v01-dark.svg" width="22" height="22" alt="">
+			<img src="{{ url_for('static', filename='images/icon-user-v01-dark.svg') }}" width="22" height="22" alt="">
 			Account
 		</a>
 		<a href="Cart.html">
-			<img src="images/icon-shopping-cart-v01-dark.svg" width="22" height="21" alt="">
+			<img src="{{ url_for('static', filename='images/icon-shopping-cart-v01-dark.svg') }}" width="22" height="21" alt="">
 			Cart <small>(6 items)</small>
 		</a>
 	</div><!-- / #nav-panel -->
 
 	<div id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="label-cart-panel">
-		<button type="button"><img src="images/icon-xmark.svg" width="16" height="16" alt="Close"></button>
+		<button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="16" height="16" alt="Close"></button>
 		<h1 id="label-cart-panel">My Shopping Cart <small>(6 items)</small></h1>
 		<table>
 			<thead>
@@ -616,31 +626,31 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-mug-dolores-white.svg" alt="A white Delores mug" style="padding: 0 10%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-mug-dolores-white.svg') }}" alt="A white Delores mug" style="padding: 0 10%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Delores Mug</a></td>
 					<td class="dets">Color: White</td>
 					<td class="qty">4</td>
 					<td class="unit">$16.00</td>
 					<td class="total">$64.00</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/binaryville-hat-dolores-black.svg" alt="A black Delores hat" style="padding: 0 7.5%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/binaryville-hat-dolores-black.svg') }}" alt="A black Delores hat" style="padding: 0 7.5%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Delores Hat</a></td>
 					<td class="dets">Color: Black</td>
 					<td class="qty">1</td>
 					<td class="unit">$30.00</td>
 					<td class="total">$30.00</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 				<tr>
-					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="images/products/stargazers-tote-charmaine.svg" alt="A white Charmaine tote bag" style="padding: 0 8.75%;"></a></td>
+					<td class="image"><a href="Product-Detail.html" role="presentation" tabindex="-1"><img src="{{ url_for('static', filename='images/products/stargazers-tote-charmaine.svg') }}" alt="A white Charmaine tote bag" style="padding: 0 8.75%;"></a></td>
 					<td class="name"><a href="Product-Detail.html">Charmaine Tote Bag</a></td>
 					<td class="dets"></td>
 					<td class="qty">1</td>
 					<td class="unit">$18.50</td>
 					<td class="total">$18.50</td>
-					<td class="action"><button type="button"><img src="images/icon-xmark.svg" width="12" height="12" alt="Remove"></button></td>
+					<td class="action"><button type="button"><img src="{{ url_for('static', filename='images/icon-xmark.svg') }}" width="12" height="12" alt="Remove"></button></td>
 				</tr>
 			</tbody>
 			<tfoot>
@@ -656,8 +666,8 @@
 		</footer>
 	</div><!-- / #cart-panel -->
 
-	<script src="js/plugins.js?ver=2209212222"></script>
-	<script src="js/main.js?ver=2209301853"></script>
+	<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>
