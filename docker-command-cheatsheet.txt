@@ -38,6 +38,8 @@ Docker build --rm=true .
 
 Docker build --no-cache .
 
+Docker build --help
+
 *** 03_01 ***
 Docker search python
 
@@ -59,8 +61,12 @@ Docker search --format "table {{.Name}}\t{{.IsAutomated}}\t{{.IsOfficial}}\t{{.D
 
 Docker search --format "table {{.Name}}\t{{.IsOfficial}}\t{{.Description}}\t{{.StarCount}}" --filter is-official=true --filter stars=10 --no-trunc python
 
+Docker search --help
+
 Docker image pull python
 
 https://hub.docker.com/_/python
 
 Docker image pull python:3.12-rc-bookworm
+
+Docker image pull --help
