@@ -70,3 +70,28 @@ https://hub.docker.com/_/python
 Docker image pull python:3.12-rc-bookworm
 
 Docker image pull --help
+
+*** 03_02 ***
+Docker image ls [OPTIONS] [REPOSITORY[:TAG]]
+
+Docker image ls --all
+
+Docker image ls --no-trunc
+
+Docker image ls --quiet
+
+Docker image ls --digests
+
+Docker image ls --filter reference=python*
+
+Docker image ls --filter before=python
+
+Docker image ls --filter since=python
+
+Docker image ls --filter dangling=true
+
+Docker image ls --filter label=python*
+
+Docker image ls --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.CreatedSince}}\t{{.CreatedAt}}\t{{.Digest}}"
+
+Docker image ls --help
