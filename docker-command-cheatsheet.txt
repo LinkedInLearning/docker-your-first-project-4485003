@@ -19,3 +19,6 @@ Git branch
 https://www.docker.com/products/docker-desktop/
 
 https://code.visualstudio.com/download
+
+*** 02_01 ***
+Code for this video is in the dockerfile
