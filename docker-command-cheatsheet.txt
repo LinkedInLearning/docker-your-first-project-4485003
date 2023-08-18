@@ -95,3 +95,5 @@ Docker image ls --filter label=python*
 Docker image ls --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.CreatedSince}}\t{{.CreatedAt}}\t{{.Digest}}"
 
 Docker image ls --help
+
+https://docs.docker.com/engine/reference/commandline/image_ls/
