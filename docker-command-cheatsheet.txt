@@ -3,6 +3,11 @@
 ************************************************************************
 
 *** 01_02 ***
+https://www.docker.com/products/docker-desktop/
+
+https://code.visualstudio.com/download
+
+*** 01_03 ***
 https://github.com/LinkedInLearning/docker-your-first-project-4485003
 
 https://git-scm.com/downloads
@@ -14,11 +19,6 @@ git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.
 git checkout CHAPTER#_MOVIE#
 
 Git branch
-
-*** 01_03 ***
-https://www.docker.com/products/docker-desktop/
-
-https://code.visualstudio.com/download
 
 *** 02_01 ***
 Code for this video is in the dockerfile
