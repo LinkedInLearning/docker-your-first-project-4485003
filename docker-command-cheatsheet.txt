@@ -3,14 +3,6 @@
 ************************************************************************
 
 *** 01_02 ***
-https://github.com/LinkedInLearning/docker-your-first-project-4485003
+https://www.docker.com/products/docker-desktop/
 
-https://git-scm.com/downloads
-
-cd c:\projects\docker-your-first-project-4485003
-
-git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.git
-
-git checkout CHAPTER#_MOVIE#
-
-Git branch
+https://code.visualstudio.com/download
