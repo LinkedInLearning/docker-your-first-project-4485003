@@ -97,3 +97,24 @@ Docker image ls --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.Size}}\t{
 Docker image ls --help
 
 https://docs.docker.com/engine/reference/commandline/image_ls/
+
+*** 03_03 ***
+Docker build -t SOURCE_IMAGE[:TAG] .
+
+Docker build -t big-star-collectibles .
+
+Docker build --no-cache -t big-star-collectibles:v1 -t big-star-collectibles .
+
+Docker image ls
+
+Docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+
+Docker tag big-star-collectibles:v1 big-star-collectibles:v1-python
+
+Docker build --no-cache -t big-star-collectibles:v2 .
+
+Docker tag SOURCE_IMAGE_ID TARGET_IMAGE[:TAG]
+
+LABEL <key>=<value> <key>=<value> <key>=<value> ...
+
+Docker image ls --filter label="com.example.vendor"="Big Star Collectibles"
