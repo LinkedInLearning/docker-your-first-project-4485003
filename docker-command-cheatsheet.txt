@@ -3,6 +3,11 @@
 ************************************************************************
 
 *** 01_02 ***
+https://www.docker.com/products/docker-desktop/
+
+https://code.visualstudio.com/download
+
+*** 01_03 ***
 https://github.com/LinkedInLearning/docker-your-first-project-4485003
 
 https://git-scm.com/downloads
@@ -14,11 +19,6 @@ git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.
 git checkout CHAPTER#_MOVIE#
 
 Git branch
-
-*** 01_03 ***
-https://www.docker.com/products/docker-desktop/
-
-https://code.visualstudio.com/download
 
 *** 02_01 ***
 Code for this video is in the dockerfile
@@ -97,3 +97,24 @@ Docker image ls --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.Size}}\t{
 Docker image ls --help
 
 https://docs.docker.com/engine/reference/commandline/image_ls/
+
+*** 03_03 ***
+Docker build -t SOURCE_IMAGE[:TAG] .
+
+Docker build -t big-star-collectibles .
+
+Docker build --no-cache -t big-star-collectibles:v1 -t big-star-collectibles .
+
+Docker image ls
+
+Docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+
+Docker tag big-star-collectibles:v1 big-star-collectibles:v1-python
+
+Docker build --no-cache -t big-star-collectibles:v2 .
+
+Docker tag SOURCE_IMAGE_ID TARGET_IMAGE[:TAG]
+
+LABEL <key>=<value> <key>=<value> <key>=<value> ...
+
+Docker image ls --filter label="com.example.vendor"="Big Star Collectibles"
