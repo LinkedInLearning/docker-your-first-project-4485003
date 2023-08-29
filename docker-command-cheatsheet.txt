@@ -129,3 +129,10 @@ Docker tag big-star-collectibles:v2 sbenhoff/big-star-collectibles-repo:big-star
 Docker push sbenhoff/big-star-collectibles-repo:big-star-collectibles
 
 Docker pull sbenhoff/big-star-collectibles-repo:big-star-collectibles
+
+*** 03_05 ***
+Docker image ls
+
+Docker image inspect IMAGE_ID
+
+Docker image inspect --format='{{json .Config.Labels}}' big-star-collectibles:v2
