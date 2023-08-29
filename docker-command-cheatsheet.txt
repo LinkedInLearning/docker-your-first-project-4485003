@@ -136,3 +136,16 @@ Docker image ls
 Docker image inspect IMAGE_ID
 
 Docker image inspect --format='{{json .Config.Labels}}' big-star-collectibles:v2
+
+*** 03_06 ***
+Docker image ls
+
+Docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Docker rmi -f big-star-collectibles:v2
+
+Docker rmi -f IMAGE_ID
+
+Docker images --digests
+
+Docker rmi -f sbenhoff/big-star-collectibles@[DIGEST]
