@@ -118,3 +118,14 @@ Docker tag SOURCE_IMAGE_ID TARGET_IMAGE[:TAG]
 LABEL <key>=<value> <key>=<value> <key>=<value> ...
 
 Docker image ls --filter label="com.example.vendor"="Big Star Collectibles"
+
+*** 03_04 ***
+https://hub.docker.com/
+
+Docker login
+
+Docker tag big-star-collectibles:v2 sbenhoff/big-star-collectibles-repo:big-star-collectibles
+
+Docker push sbenhoff/big-star-collectibles-repo:big-star-collectibles
+
+Docker pull sbenhoff/big-star-collectibles-repo:big-star-collectibles
