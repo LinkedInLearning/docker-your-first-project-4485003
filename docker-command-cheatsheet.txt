@@ -18,24 +18,24 @@ git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.
 
 git checkout CHAPTER#_MOVIE#
 
-Git branch
+git branch
 
 *** 02_01 ***
 Code for this video is in the dockerfile
 
 *** 02_02 ***
-Docker build [OPTIONS] PATH | URL | -
+docker build [OPTIONS] PATH | URL | -
 
 https://docs.docker.com/engine/reference/commandline/build/
 
-Docker build .
+docker build .
 
-Docker build -f [dockerfile] .
+docker build -f [dockerfile] .
 
-Docker build --force-rm=true .
+docker build --force-rm=true .
 
-Docker build --rm=true .
+docker build --rm=true .
 
-Docker build --no-cache .
+docker build --no-cache .
 
-Docker build --help
+docker build --help
