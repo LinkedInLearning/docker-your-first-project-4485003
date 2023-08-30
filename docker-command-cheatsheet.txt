@@ -18,55 +18,55 @@ git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.
 
 git checkout CHAPTER#_MOVIE#
 
-Git branch
+git branch
 
 *** 02_01 ***
 Code for this video is in the dockerfile
 
 *** 02_02 ***
-Docker build [OPTIONS] PATH | URL | -
+docker build [OPTIONS] PATH | URL | -
 
 https://docs.docker.com/engine/reference/commandline/build/
 
-Docker build .
+docker build .
 
-Docker build -f [dockerfile] .
+docker build -f [dockerfile] .
 
-Docker build --force-rm=true .
+docker build --force-rm=true .
 
-Docker build --rm=true .
+docker build --rm=true .
 
-Docker build --no-cache .
+docker build --no-cache .
 
-Docker build --help
+docker build --help
 
 *** 03_01 ***
-Docker search python
+docker search python
 
-Docker search --filter is-official=true python
+docker search --filter is-official=true python
 
-Docker search --filter stars=100 python
+docker search --filter stars=100 python
 
-Docker search --filter is-automated=true python
+docker search --filter is-automated=true python
 
-Docker search --filter is-official=true --filter stars=10 --filter is-automated=false python
+docker search --filter is-official=true --filter stars=10 --filter is-automated=false python
 
-Docker search --limit 4 python
+docker search --limit 4 python
 
-Docker search --no-trunc python
+docker search --no-trunc python
 
-Docker search --format "{{.Name}}: {{.Description}}" --no-trunc python
+docker search --format "{{.Name}}: {{.Description}}" --no-trunc python
 
-Docker search --format "table {{.Name}}\t{{.IsAutomated}}\t{{.IsOfficial}}\t{{.Description}}\t{{.StarCount}}" python
+docker search --format "table {{.Name}}\t{{.IsAutomated}}\t{{.IsOfficial}}\t{{.Description}}\t{{.StarCount}}" python
 
-Docker search --format "table {{.Name}}\t{{.IsOfficial}}\t{{.Description}}\t{{.StarCount}}" --filter is-official=true --filter stars=10 --no-trunc python
+docker search --format "table {{.Name}}\t{{.IsOfficial}}\t{{.Description}}\t{{.StarCount}}" --filter is-official=true --filter stars=10 --no-trunc python
 
-Docker search --help
+docker search --help
 
-Docker image pull python
+docker image pull python
 
 https://hub.docker.com/_/python
 
-Docker image pull python:3.12-rc-bookworm
+docker image pull python:3.12-rc-bookworm
 
-Docker image pull --help
+docker image pull --help
