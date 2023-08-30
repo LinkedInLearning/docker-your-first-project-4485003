@@ -212,3 +212,20 @@ Exit Code 137	Immediate termination (SIGKILL)
 Exit Code 139	Segmentation fault (SIGSEGV)
 Exit Code 143	Graceful termination (SIGTERM)
 Exit Code 255	Exit Status Out Of Range
+
+*** 04_03 ***
+https://docs.docker.com/engine/reference/commandline/inspect/
+
+docker inspect [OPTIONS] NAME|ID [NAME|ID...]
+
+docker ps
+
+docker inspect [ID]
+
+docker inspect --format='{{.Config.Image}}' [NAME|ID]
+
+docker inspect --format='{{.Id}}' [NAME|ID]
+
+docker inspect --format='{{.LogPath}}' [NAME|ID]
+
+docker inspect --format='{{json .Config}}' [NAME|ID]
