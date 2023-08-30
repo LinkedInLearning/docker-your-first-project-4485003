@@ -149,3 +149,24 @@ Docker rmi -f IMAGE_ID
 Docker images --digests
 
 Docker rmi -f sbenhoff/big-star-collectibles@[DIGEST]
+
+*** 04_01 ***
+https://docs.docker.com/engine/reference/commandline/run/
+
+Docker start [OPTIONS] CONTAINER [CONTAINER...]
+
+Docker start big-star-collectibles:v2
+
+Docker run [OPTIONS] IMAGE[:TAG] [COMMAND] [ARG...]
+
+Docker run -it -d -p 5000:5000 -v ${PWD}:/app/code big-star-collectibles
+
+http://localhost:5000
+
+Docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Docker stop big-star-collectibles:v2
+
+Docker kill [OPTIONS] CONTAINER [CONTAINER...]
+
+Docker kill big-star-collectibles:v2
