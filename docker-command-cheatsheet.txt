@@ -18,4 +18,4 @@ git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.
 
 git checkout CHAPTER#_MOVIE#
 
-Git branch
+git branch
