@@ -229,3 +229,24 @@ docker inspect --format='{{.Id}}' [NAME|ID]
 docker inspect --format='{{.LogPath}}' [NAME|ID]
 
 docker inspect --format='{{json .Config}}' [NAME|ID]
+
+*** 04_04 ***
+https://docs.docker.com/engine/reference/commandline/logs/
+
+docker logs [OPTIONS] CONTAINER
+
+docker logs --tail 1000 -f [NAME|ID]
+
+docker logs --tail 1000 -f --details [NAME|ID]
+
+* UTC Format
+docker logs --tail 1000 -f --since 2023-12-01T01:00:00Z [NAME|ID]
+
+docker logs --tail 1000 -f --until 2023-12-01T01:00:00Z [NAME|ID]
+
+* Relative Format
+docker logs --tail 1000 -f --since 60 [NAME|ID]
+
+docker logs --tail 1000 -f --until 60 [NAME|ID]
+
+docker logs --tail 1000 -f --timestamps [NAME|ID]
