@@ -18,7 +18,7 @@ git clone https://github.com/LinkedInLearning/docker-your-first-project-4485003.
 
 git checkout CHAPTER#_MOVIE#
 
-Git branch
+git branch
 
 *** 02_01 ***
 Code for this video is in the dockerfile
