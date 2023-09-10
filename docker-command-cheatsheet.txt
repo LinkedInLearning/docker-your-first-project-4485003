@@ -265,3 +265,16 @@ docker volume rm big-star-collectibles-vol
 docker run -it -d -p 5000:5000 -v "$(PWD)/test"/target:/app/test sbenhoff/big-star-collectibles-repo:big-star-collectibles
 
 docker run -it -d -p 5000:5000 --mount type=bind,source="$(PWD)/test",target=/app/test sbenhoff/big-star-collectibles-repo:big-star-collectibles
+
+*** 04_06 ***
+docker image prune
+
+docker image prune -a -f
+
+docker image prune -a -f --filter label="com.example.vendor"="Big Star Collectibles"
+
+docker container prune
+
+docker volume prune -f --filter label="com.example.vendor"="Big Star Collectibles"
+
+docker system prune --volumes -f
