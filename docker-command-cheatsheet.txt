@@ -262,6 +262,6 @@ docker run -it -d -p 5000:5000 -v big-star-collectibles-vol:/app/data sbenhoff/b
 
 docker volume rm big-star-collectibles-vol
 
-docker run -it -d -p 5000:5000 -v "$(PWD)"/target:/app sbenhoff/big-star-collectibles-repo:big-star-collectibles
+docker run -it -d -p 5000:5000 -v "$(PWD)/test"/target:/app/test sbenhoff/big-star-collectibles-repo:big-star-collectibles
 
-docker run -it -d -p 5000:5000 --mount type=bind,source="$(PWD)/test",target=/app sbenhoff/big-star-collectibles-repo:big-star-collectibles
+docker run -it -d -p 5000:5000 --mount type=bind,source="$(PWD)/test",target=/app/test sbenhoff/big-star-collectibles-repo:big-star-collectibles
